@@ -49,6 +49,8 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Provider.cs" />
     <Compile Include="Entities\Shop.cs" />
+    <Compile Include="Enums\DataConnectionResource.cs" />
+    <Compile Include="Enums\StringValueAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

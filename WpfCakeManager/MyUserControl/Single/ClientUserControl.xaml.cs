@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CakeManager.Entities;
 
-namespace WpfCakeManager.MyUserControl
+namespace WpfCakeManager.MyUserControl.Single
 {
     /// <summary>
     /// Logique d'interaction pour ClientUserControl.xaml

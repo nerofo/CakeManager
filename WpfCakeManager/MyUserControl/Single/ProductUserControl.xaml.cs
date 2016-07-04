@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfCakeManager.MyUserControl
+namespace WpfCakeManager.MyUserControl.Single
 {
     /// <summary>
     /// Logique d'interaction pour ProductUserControl.xaml
@@ -36,6 +36,7 @@ namespace WpfCakeManager.MyUserControl
         public ProductUserControl()
         {
             InitializeComponent();
+            //this.CategoryUserControl.Category = this.product.Category;
             this.DataContext = this;
         }
     }

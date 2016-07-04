@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\App.xaml
-16699855057
+11-771330443
 
-2653387333
+22-71754097
 16-1951408046
-MainWindow.xaml;MyUserControl\List\CategoryListUserControl.xaml;MyUserControl\List\ClientListUserControl.xaml;MyUserControl\List\OrderListUserControl.xaml;MyUserControl\List\OwnerListUserControl.xaml;MyUserControl\List\ProductListUserControl.xaml;MyUserControl\List\ProviderListUserControl.xaml;MyUserControl\List\ShopListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;MyUserControl\Single\ShopUserControl.xaml;Views\AddressView.xaml;
+MyUserControl\List\ClientListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\CategoryUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;Views\NavigationWindows.xaml;Views\Pages\AddressView.xaml;Views\Pages\ClientListView.xaml;
 
 False
 

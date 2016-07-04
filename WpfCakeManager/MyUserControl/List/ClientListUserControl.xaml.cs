@@ -13,30 +13,38 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CakeManager.Entities;
+using System.Collections.ObjectModel;
 
-namespace WpfCakeManager.MyUserControl
+namespace WpfCakeManager.MyUserControl.List
 {
     /// <summary>
     /// Logique d'interaction pour ClientUserControl.xaml
     /// </summary>
     public partial class ClientListUserControl : BaseUserControl
     {
-        private Client client;
+        private ObservableCollection<Client> clients;
 
-        public Client Client
+        public ObservableCollection<Client> Clients
         {
-            get { return client; }
-            set
-            {
-                client = value;
-                this.OnPropertyChanged("Client");  
-            }
+            get { return clients; }
+            set { clients = value; this.OnPropertyChanged("Clients"); }
         }
+
 
         public ClientListUserControl()
         {
             InitializeComponent();
-            this.DataContext = this;
+            this.clients = new ObservableCollection<Client>();
+            this.ListClientL.ItemsSource = this.clients;
+        }
+
+        public void LoadItems(List<Client> items)
+        {
+            this.clients.Clear();
+            foreach (var item in items)
+            {
+                this.clients.Add(item);
+            }
         }
     }
 }

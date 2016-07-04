@@ -14,6 +14,8 @@ namespace CakeManager.Entities
         #region Attributes
         private String name;
         private Decimal price;
+        private Category category;
+        private Int32 quantity;
         #endregion
 
         #region Constructor
@@ -56,6 +58,22 @@ namespace CakeManager.Entities
             }
         }
         /// <summary>
+        /// Define or return a name for product
+        /// </summary>
+        public Category Category
+        {
+            get
+            {
+                return category;
+            }
+
+            set
+            {
+                category = value;
+                this.OnPropertyChanged("Name");
+            }
+        }
+        /// <summary>
         /// Define or return a price for product
         /// </summary>
         public Decimal Price
@@ -69,6 +87,22 @@ namespace CakeManager.Entities
             {
                 price = value;
                 this.OnPropertyChanged("Price");
+            }
+        }
+        /// <summary>
+        /// Define or return a quantity for product
+        /// </summary>
+        public Int32 Quantity
+        {
+            get
+            {
+                return quantity;
+            }
+
+            set
+            {
+                price = value;
+                this.OnPropertyChanged("Quantity");
             }
         }
         #endregion

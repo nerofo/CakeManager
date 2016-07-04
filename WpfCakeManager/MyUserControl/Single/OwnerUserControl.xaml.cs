@@ -36,6 +36,7 @@ namespace WpfCakeManager.MyUserControl
         public OwnerUserControl()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
     }
 }

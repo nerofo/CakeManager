@@ -57,51 +57,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MyUserControl\List\ClientListUserControl.xaml.cs">
+      <DependentUpon>ClientListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\Single\CategoryUserControl.xaml.cs">
+      <DependentUpon>CategoryUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\AddressViewModel.cs" />
-    <Compile Include="Views\AddressView.xaml.cs">
+    <Compile Include="Views\NavigationWindows.xaml.cs">
+      <DependentUpon>NavigationWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AddressView.xaml.cs">
       <DependentUpon>AddressView.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Views\Pages\ClientListView.xaml.cs">
+      <DependentUpon>ClientListView.xaml</DependentUpon>
     </Compile>
-    <Page Include="MyUserControl\List\CategoryListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MyUserControl\List\ClientListUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MyUserControl\List\OrderListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MyUserControl\List\OwnerListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MyUserControl\List\ProductListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MyUserControl\List\ProviderListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MyUserControl\List\ShopListUserControl.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MyUserControl\Single\AddressUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyUserControl\Single\CategoryUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,37 +109,20 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MyUserControl\Single\ShopUserControl.xaml">
+    <Page Include="Views\NavigationWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AddressView.xaml">
+    <Page Include="Views\Pages\AddressView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ClientListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyUserControl\List\CategoryListUserControl.xaml.cs">
-      <DependentUpon>CategoryListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\ClientListUserControl.xaml.cs">
-      <DependentUpon>ClientListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\OrderListUserControl.xaml.cs">
-      <DependentUpon>OrderListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\OwnerListUserControl.xaml.cs">
-      <DependentUpon>OwnerListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\ProductListUserControl.xaml.cs">
-      <DependentUpon>ProductListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\ProviderListUserControl.xaml.cs">
-      <DependentUpon>ProviderListUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\List\ShopListUserControl.xaml.cs">
-      <DependentUpon>ShopListUserControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MyUserControl\Single\AddressUserControl.xaml.cs">
       <DependentUpon>AddressUserControl.xaml</DependentUpon>
     </Compile>
@@ -174,9 +141,6 @@
     </Compile>
     <Compile Include="MyUserControl\Single\ProviderUserControl.xaml.cs">
       <DependentUpon>ProviderUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyUserControl\Single\ShopUserControl.xaml.cs">
-      <DependentUpon>ShopUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

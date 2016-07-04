@@ -5,8 +5,21 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WpfCakeManager.MyUserControl"
              xmlns:baseUserControl="clr-namespace:WpfCakeManager.MyUserControl"
-             mc:Ignorable="d" Height="50" Width="100" >
+             mc:Ignorable="d" Height="50" Width="100" 
+             xmlns:uc="clr-namespace:WpfCakeManager.MyUserControl.Single">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <uc:ClientUserControl x:Name="ClientUserControl" DataContext="Order.Client" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <uc:ProductUserControl x:Name="ProductUserControl" DataContext="Order.Product" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="0" Grid.Row="2">Quantité :</Label>
+        <TextBox x:Name="ProductQuantityTxtB" Text="{Binding Order.Quantity}" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </baseUserControl:BaseUserControl>
