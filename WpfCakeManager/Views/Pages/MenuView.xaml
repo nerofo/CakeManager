@@ -1,15 +1,16 @@
-﻿<Page x:Class="WpfCakeManager.Views.Pages.ClientListView"
+﻿<Page x:Class="WpfCakeManager.Views.Pages.MenuView"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfCakeManager.Views.Pages"
       mc:Ignorable="d" 
-      Title="Gestion des clients"
-      xmlns:uc="clr-namespace:WpfCakeManager.MyUserControl.List">
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="MenuView">
 
-    <Grid Margin="5">
+    <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -17,8 +18,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <uc:ClientListUserControl x:Name="ClientListUserControl" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-        <Button x:Name="EditB" Content="Editer" Grid.Row="1" Grid.Column="1" Margin="20"/>
-        <Button x:Name="AddB" Content="Ajouter" Grid.Row="1" Grid.Column="0" Margin="20"/>
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Menu principal</Label>
+        <Button Content="Clients" Margin="20" Grid.Row="1" Grid.Column="0"/>
+
     </Grid>
 </Page>

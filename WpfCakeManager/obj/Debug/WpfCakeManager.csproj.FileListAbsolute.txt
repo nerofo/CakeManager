@@ -35,3 +35,5 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeMa
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\MyUserControl\Single\CategoryUserControl.baml
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ClientListView.g.cs
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ClientListView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\MenuView.g.cs
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\MenuView.baml

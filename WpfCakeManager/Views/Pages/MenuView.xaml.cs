@@ -12,20 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfCakeManager.Views;
-using WpfCakeManager.Views.Pages;
 
-namespace WpfCakeManager.Views
+namespace WpfCakeManager.Views.Pages
 {
     /// <summary>
-    /// Logique d'interaction pour NavigationWindows1.xaml
+    /// Logique d'interaction pour MenuView.xaml
     /// </summary>
-    public partial class NavigationWindows1 : NavigationWindow
+    public partial class MenuView : Page
     {
-        public NavigationWindows1()
+        public MenuView()
         {
             InitializeComponent();
-            this.NavigationService.Navigate(new MenuView());
         }
     }
 }
