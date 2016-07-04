@@ -37,6 +37,8 @@ namespace WpfCakeManager.MyUserControl.Single
         {
             InitializeComponent();
             this.DataContext = this;
+            Address address = new Address();
+            this.AddressUserControl.Address = address;
         }
     }
 }

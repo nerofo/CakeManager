@@ -4,8 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfCakeManager.Views.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      mc:Ignorable="d"
       Title="MenuView">
 
     <Grid>
@@ -17,9 +16,21 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Menu principal</Label>
-        <Button Content="Clients" Margin="20" Grid.Row="1" Grid.Column="0"/>
+        <Label FontSize="24" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">CakeManager (ne gère pas que des gateaux)</Label>
+        <Label FontSize="24" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Menu principal</Label>
+        
+        <Label FontSize="24" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion utilisateur</Label>
+        <Button x:Name="ClientManagerBtn" Content="Gestion des clients" Margin="20" Grid.Row="3" Grid.Column="0"/>
+        <Button x:Name="ProviderManagerBtn" Content="Gestion des fournisseurs" Margin="20" Grid.Row="3" Grid.Column="1"/>
+        <Button x:Name="OwnerManagerBtn" Content="Modifier infos propriétaire" Margin="20" Grid.Row="3" Grid.Column="2"/>
 
+        <Label FontSize="24" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion commande et produit</Label>
+        <Button x:Name="ProductManagerBtn" Content="Gestion des produits" Margin="20" Grid.Row="5" Grid.Column="0"/>
+        <Button x:Name="OrderManagerBtn" Content="Gestion des commandes" Margin="20" Grid.Row="5" Grid.Column="1"/>
     </Grid>
 </Page>

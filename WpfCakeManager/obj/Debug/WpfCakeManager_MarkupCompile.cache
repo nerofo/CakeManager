@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\
+C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\
 WpfCakeManager
 none
 false
 DEBUG;TRACE
-C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\App.xaml
-121091275142
+C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\App.xaml
+13565773925
 
-19991695982
-16-1951408046
-MyUserControl\List\ClientListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\CategoryUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;Views\NavigationWindows.xaml;Views\Pages\AddressView.xaml;Views\Pages\ClientListView.xaml;Views\Pages\MenuView.xaml;
+22983213092
+16-68628631
+MyUserControl\List\ClientListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\CategoryUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;Views\NavigationWindows.xaml;Views\Pages\AddressView.xaml;Views\Pages\ClientListView.xaml;Views\Pages\ClientView.xaml;Views\Pages\MenuView.xaml;
 
 False
 

@@ -6,5 +6,5 @@
         xmlns:local="clr-namespace:WpfCakeManager.Views"
         mc:Ignorable="d"
         Source="Pages/Page1.xaml"
-        Title="NavigationWindows1" Height="400" Width="400">
+        Title="CakeManager" Height="500" Width="700">
 </NavigationWindow>

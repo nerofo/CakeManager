@@ -17,16 +17,16 @@ using WpfCakeManager.ViewModel;
 namespace WpfCakeManager.Views.Pages
 {
     /// <summary>
-    /// Logique d'interaction pour MenuView.xaml
+    /// Logique d'interaction pour ClientView.xaml
     /// </summary>
-    public partial class MenuView : Page
+    public partial class ClientView : Page
     {
-        private MenuViewModel menuViewModel;
+        private ClientViewModel clientViewModel;
 
-        public MenuView()
+        public ClientView()
         {
             InitializeComponent();
-            this.menuViewModel = new MenuViewModel(this);
+            this.clientViewModel = new ClientViewModel(this);
         }
     }
 }

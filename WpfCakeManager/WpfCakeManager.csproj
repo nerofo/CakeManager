@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="ViewModel\AddressViewModel.cs" />
     <Compile Include="ViewModel\ClientListViewModel.cs" />
+    <Compile Include="ViewModel\ClientViewModel.cs" />
     <Compile Include="ViewModel\MenuViewModel.cs" />
     <Compile Include="Views\NavigationWindows.xaml.cs">
       <DependentUpon>NavigationWindows.xaml</DependentUpon>
@@ -78,6 +79,9 @@
     </Compile>
     <Compile Include="Views\Pages\ClientListView.xaml.cs">
       <DependentUpon>ClientListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ClientView.xaml.cs">
+      <DependentUpon>ClientView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
@@ -123,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\ClientListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ClientView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

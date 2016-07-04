@@ -27,6 +27,6 @@
         <TextBox x:Name="ClientPhoneTxtB" Text="{Binding Client.Phone}" Grid.Row="2" Grid.Column="1"/>
         <Label Grid.Row="3" Grid.Column="0">Email :</Label>
         <TextBox x:Name="ClientMailTxtB" Text="{Binding Client.Mail}" Grid.Row="3" Grid.Column="1"/>
-        <uc:AddressUserControl x:Name="AddressUserControl" DataContext="Client.Address" Grid.Column="2" Grid.Row="0" Grid.RowSpan="4"/>
+        <uc:AddressUserControl x:Name="AddressUserControl" Grid.Column="2" Grid.Row="0" Grid.RowSpan="4"/>
     </Grid>
 </baseUserControl:BaseUserControl>

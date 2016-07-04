@@ -19,8 +19,8 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock x:Name="ClientIdTxtB" Text="{Binding Id}" Grid.Row="0" Grid.Column="0"/>
-                    <TextBlock x:Name="ClientNameTxtB" Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock Margin="5" x:Name="ClientIdTxtB" Text="{Binding Id}" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock Margin="5" x:Name="ClientNameTxtB" Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
                 </Grid>
             </DataTemplate>
         </ListView.ItemTemplate>

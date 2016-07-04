@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfCakeManager.ViewModel;
 
 namespace WpfCakeManager.Views.Pages
 {
@@ -20,9 +21,12 @@ namespace WpfCakeManager.Views.Pages
     /// </summary>
     public partial class ClientListView : Page
     {
+        private ClientListViewModel clientListViewModel;
+
         public ClientListView()
         {
             InitializeComponent();
+            this.clientListViewModel = new ClientListViewModel(this);
         }
     }
 }
