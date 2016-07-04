@@ -12,12 +12,12 @@ namespace CakeManager.Entities
         public event PropertyChangedEventHandler PropertyChanged;
 
         #region Attributes
-        private Int32 id;
+        protected Int32 id;
         #endregion
 
         #region Property
         /// <summary>
-        /// Define or return a id for address
+        /// Define or return a id for EntityBase
         /// </summary>
         public int Id
         {

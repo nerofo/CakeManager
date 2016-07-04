@@ -17,10 +17,10 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label FontSize="5" Grid.Row="0" Grid.Column="0">Nom :</Label>
-        <TextBlock x:Name="ClientNameTxtB" Text="{Binding Client.Name}" Grid.Row="0" Grid.Column="1"/>
+        <TextBox x:Name="ClientNameTxtB" Text="{Binding Client.Name}" Grid.Row="0" Grid.Column="1"/>
         <Label FontSize="5" Grid.Row="1" Grid.Column="0">Téléphone :</Label>
-        <TextBlock x:Name="ClientPhoneTxtB" Text="{Binding Client.Phone}" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="ClientPhoneTxtB" Text="{Binding Client.Phone}" Grid.Row="1" Grid.Column="1"/>
         <Label FontSize="5" Grid.Row="2" Grid.Column="0">Email :</Label>
-        <TextBlock x:Name="ClientMailTxtB" Text="{Binding Client.Mail}" Grid.Row="2" Grid.Column="1"/>
+        <TextBox x:Name="ClientMailTxtB" Text="{Binding Client.Mail}" Grid.Row="2" Grid.Column="1"/>
     </Grid>
 </baseUserControl:BaseUserControl>

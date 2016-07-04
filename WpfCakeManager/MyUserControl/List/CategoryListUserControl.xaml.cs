@@ -21,7 +21,7 @@ namespace WpfCakeManager.MyUserControl
     /// </summary>
     public partial class CategoryListUserControl : BaseUserControl
     {
-        private Category category;
+        protected Category category;
 
         public Category Category
         {

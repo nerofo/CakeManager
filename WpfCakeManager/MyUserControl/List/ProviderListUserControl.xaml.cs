@@ -21,7 +21,7 @@ namespace WpfCakeManager.MyUserControl
     /// </summary>
     public partial class ProviderListUserControl : BaseUserControl
     {
-        private Provider provider;
+        protected Provider provider;
 
         public Provider Provider
         {
