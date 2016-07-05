@@ -19,11 +19,11 @@ namespace WpfCakeManager.ViewModel
 
             //TODO JEU DE DONNEES A ENLEVER
             Client client = new Client();
-            Client client2 = new Client();
+            var r1 = client.LoadSingleItem();
+            var r1s = client.LoadMultipleItem();
             List<Client> clients = new List<Client>();
-            clients.Add(client);
-            clients.Add(client2);
-            this.clientListView.ClientListUserControl.LoadItems(clients);
+            clients.Add(r1);
+            this.clientListView.ClientListUserControl.LoadItems(r1s);
         }
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)

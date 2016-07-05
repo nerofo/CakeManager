@@ -3,3 +3,4 @@ C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManag
 C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\CakeManager.pdb
 C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\obj\Debug\CakeManager.dll
 C:\Users\Valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\obj\Debug\CakeManager.pdb
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\Faker.dll

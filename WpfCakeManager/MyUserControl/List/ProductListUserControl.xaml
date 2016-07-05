@@ -1,0 +1,32 @@
+﻿<baseUserControl:BaseUserControl x:Class="WpfCakeManager.MyUserControl.List.ProductListUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfCakeManager.MyUserControl"
+             xmlns:uc="clr-namespace:WpfCakeManager.MyUserControl.List"
+             xmlns:baseUserControl="clr-namespace:WpfCakeManager.MyUserControl"
+             mc:Ignorable="d">
+    <ListView x:Name="ListProductL">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="5" x:Name="ProductIdTxtB" Text="{Binding Product.Id}" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock Margin="5" x:Name="ProductCategoryNameTxtB" Text="{Binding Product.Category.Name}" Grid.Row="0" Grid.Column="1"/>
+                    <TextBlock Margin="5" x:Name="ProductNameTxtB" Text="{Binding Product.Name}" Grid.Row="0" Grid.Column="2"/>
+                    <TextBlock Margin="5" x:Name="ProductPriceTxtB" Text="{Binding Product.Price}" Grid.Row="0" Grid.Column="3"/>
+                    <TextBlock Margin="5" x:Name="ProductQuantityTxtB" Text="{Binding Product.Quantity}" Grid.Row="0" Grid.Column="4"/>
+                </Grid>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</baseUserControl:BaseUserControl>

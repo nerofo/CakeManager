@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CakeManager.MyFaker;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,14 +36,14 @@ namespace CakeManager.Entities
         /// </summary>
         public Client()
         {
-            this.id = 1;
-            this.Name = "Cucu";
-            this.Phone = "0299874125";
-            this.Mail = "laloutre@zoo.fr";
-            this.Street = "2 rue des loutres";
-            this.PostalCode = 35000;
-            this.City = "Rennes";
-            this.Country = "FRANCE";
+            //this.id = 1;
+            //this.Name = "Cucu";
+            //this.Phone = "0299874125";
+            //this.Mail = "laloutre@zoo.fr";
+            //this.Street = "2 rue des loutres";
+            //this.PostalCode = 35000;
+            //this.City = "Rennes";
+            //this.Country = "FRANCE";
         }
         #endregion
 
@@ -98,6 +99,23 @@ namespace CakeManager.Entities
         #endregion
 
         #region Methods
+        public new Client LoadSingleItem()
+        {
+            Client result = new Client();
+            result.Id = Faker.Number.RandomNumber();
+            result.Name = Faker.Name.FullName();
+            result.Phone = Faker.Number.RandomNumber().ToString();
+            return result;
+        }
+        public new List<Client> LoadMultipleItem()
+        {
+            List<Client> result = new List<Client>();
+            for (int i = 0; i < Faker.Number.RandomNumber(3, 20); i++)
+            {
+                result.Add(LoadSingleItem());
+            }
+            return result;
+        }
         #endregion
     }
 }

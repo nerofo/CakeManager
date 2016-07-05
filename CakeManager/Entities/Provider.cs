@@ -32,7 +32,13 @@ namespace CakeManager.Entities
         /// </summary>
         public Provider()
         {
-
+            this.id = 1;
+            this.Name = "Coucou";
+            this.Phone = "0299874125";
+            this.Street = "2 rue des dauphin";
+            this.PostalCode = 35000;
+            this.City = "Rennes";
+            this.Country = "FRANCE";
         }
         #endregion
 
