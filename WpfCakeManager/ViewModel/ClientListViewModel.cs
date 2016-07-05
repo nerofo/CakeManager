@@ -1,4 +1,6 @@
-﻿using CakeManager.Entities;
+﻿using CakeManager.Database;
+using CakeManager.Entities;
+using CakeManager.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,11 +21,17 @@ namespace WpfCakeManager.ViewModel
 
             //TODO JEU DE DONNEES A ENLEVER
             Client client = new Client();
-            var r1 = client.LoadSingleItem();
-            var r1s = client.LoadMultipleItem();
-            List<Client> clients = new List<Client>();
-            clients.Add(r1);
-            this.clientListView.ClientListUserControl.LoadItems(r1s);
+            client.Id = 1;
+            client.Name = "Plouf";
+            Address address = new Address();
+            address.Id = 1;
+            address.Street = "5 rue des emmerdes";
+            client.Address = address;
+
+            MySQLManager<Client> manager1 = new MySQLManager<Client>(DataConnectionResource.LOCALMYQSL);
+            MySQLManager<Address> manager2 = new MySQLManager<Address>(DataConnectionResource.LOCALMYQSL);
+            manager1.Insert(client);
+            
         }
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)

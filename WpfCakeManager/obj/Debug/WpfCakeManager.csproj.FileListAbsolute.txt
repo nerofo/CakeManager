@@ -60,3 +60,5 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeMa
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderListView.baml
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderView.g.cs
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\EntityFramework.SqlServer.xml

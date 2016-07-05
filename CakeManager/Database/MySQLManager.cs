@@ -16,7 +16,7 @@ namespace CakeManager.Database
         public MySQLManager(DataConnectionResource dataConnectionResource)
                     : base(EnumString.GetStringValue(dataConnectionResource))
         {
-
+            FullDb full = new FullDb(dataConnectionResource);
         }
 
         public async Task<TEntity> Insert(TEntity item)
@@ -72,12 +72,23 @@ namespace CakeManager.Database
 
         public async Task<Int32> Delete(TEntity item)
         {
-            return 0;
+            await Task.Factory.StartNew(() =>
+            {
+                this.DbSetT.Attach(item);
+                this.DbSetT.Remove(item);
+            });
+            return await this.SaveChangesAsync();
         }
 
         public async Task<Int32> Delete(IEnumerable<TEntity> items)
         {
-            return 0;
+            await Task.Factory.StartNew(() =>
+            {
+                this.DbSetT.Attach((items as List<TEntity>)[0]);
+                this.DbSetT.RemoveRange(items);
+            });
+            var res = await this.SaveChangesAsync();
+            return res;
         }
     }
 }

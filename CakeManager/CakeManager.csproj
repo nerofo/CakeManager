@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\FullDb.cs" />
     <Compile Include="Database\MySQLManager.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Base\EntityBase.cs" />

@@ -1,6 +1,7 @@
 ﻿using CakeManager.MyFaker;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,13 @@ namespace CakeManager.Entities
     /// Describe a client for shop
     /// </summary>
     [Table("client")]
-    public class Client : Address
+    public class Client : EntityBase
     {
         #region Attributes
         private String name;
         private String phone;
         private String mail;
+        private Address address;
         #endregion
 
         #region Constructor
@@ -101,6 +103,22 @@ namespace CakeManager.Entities
                 this.OnPropertyChanged("Mail");
             }
         }
+        /// <summary>
+        /// Define or return a address for client
+        /// </summary>
+        public Address Address
+        {
+            get
+            {
+                return address;
+            }
+
+            set
+            {
+                address = value;
+            }
+        }
+
         #endregion
 
         #region Methods

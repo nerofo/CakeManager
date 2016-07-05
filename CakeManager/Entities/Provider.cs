@@ -11,11 +11,12 @@ namespace CakeManager.Entities
     /// Describe a provider for shop
     /// </summary>
     [Table("provider")]
-    public class Provider : Address
+    public class Provider : EntityBase
     {
         #region Attributes
         private String name;
         private String phone;
+        private Address address;
         #endregion
 
         #region Constructor
@@ -34,13 +35,7 @@ namespace CakeManager.Entities
         /// </summary>
         public Provider()
         {
-            this.id = 1;
-            this.Name = "Coucou";
-            this.Phone = "0299874125";
-            this.Street = "2 rue des dauphin";
-            this.PostalCode = 35000;
-            this.City = "Rennes";
-            this.Country = "FRANCE";
+
         }
         #endregion
 
@@ -77,6 +72,22 @@ namespace CakeManager.Entities
             {
                 phone = value;
                 this.OnPropertyChanged("Phone");
+            }
+        }
+        /// <summary>
+        /// Define or return a address for provider
+        /// </summary>
+        [Column("address")]
+        public Address Address
+        {
+            get
+            {
+                return address;
+            }
+
+            set
+            {
+                address = value;
             }
         }
         #endregion

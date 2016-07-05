@@ -11,11 +11,12 @@ namespace CakeManager.Entities
     /// Describe a owner for shop
     /// </summary>
     [Table("owner")]
-    public class Owner : Address
+    public class Owner : EntityBase
     {
         #region Attributes
         private String name;
         private String firstname;
+        private Address address;
         #endregion
 
         #region Constructor
@@ -73,6 +74,23 @@ namespace CakeManager.Entities
                 this.OnPropertyChanged("Firstname");
             }
         }
+        /// <summary>
+        /// Define or return a address for owner
+        /// </summary>
+        [Column("address")]
+        public Address Address
+        {
+            get
+            {
+                return address;
+            }
+
+            set
+            {
+                address = value;
+            }
+        }
+
         #endregion
 
         #region Methods
