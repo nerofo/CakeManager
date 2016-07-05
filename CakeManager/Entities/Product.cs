@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,8 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a product for shop
     /// </summary>
-    public abstract class Product : EntityBase
+    [Table("product")]
+    public class Product : EntityBase
     {
         #region Attributes
         private String name;
@@ -32,7 +34,7 @@ namespace CakeManager.Entities
             this.price = price;
         }
         /// <summary>
-        /// Constructor
+        /// Constructor for product
         /// </summary>
         public Product()
         {
@@ -44,6 +46,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a name for product
         /// </summary>
+        [Column("name")]
         public string Name
         {
             get
@@ -60,6 +63,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a name for product
         /// </summary>
+        [Column("category")]
         public Category Category
         {
             get
@@ -76,6 +80,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a price for product
         /// </summary>
+        [Column("price")]
         public Decimal Price
         {
             get
@@ -92,6 +97,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a quantity for product
         /// </summary>
+        [Column("quantity")]
         public Int32 Quantity
         {
             get
@@ -108,14 +114,6 @@ namespace CakeManager.Entities
         #endregion
 
         #region Methods
-        /// <summary>
-        /// Display product with attribute
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return this.name + " " + this.price + " e";
-        }
         #endregion
     }
 }

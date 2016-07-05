@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a address
     /// </summary>
+    [Table("address")]
     public class Address : EntityBase
     {
         #region Attributes
@@ -50,6 +52,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a postal code for address
         /// </summary>
+        [Column("postalcode")]
         public int PostalCode
         {
             get
@@ -66,6 +69,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a city for address
         /// </summary>
+        [Column("city")]
         public string City
         {
             get
@@ -82,6 +86,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a country for address
         /// </summary>
+        [Column("country")]
         public string Country
         {
             get
@@ -98,6 +103,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a street for address
         /// </summary>
+        [Column("street")]
         public string Street
         {
             get

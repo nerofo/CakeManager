@@ -27,7 +27,7 @@ namespace WpfCakeManager.MyUserControl.List
         public ObservableCollection<Product> Products
         {
             get { return products; }
-            set { products = value; this.OnPropertyChanged("Clients"); }
+            set { products = value; this.OnPropertyChanged("Products"); }
         }
 
 
@@ -35,7 +35,7 @@ namespace WpfCakeManager.MyUserControl.List
         {
             InitializeComponent();
             this.products = new ObservableCollection<Product>();
-            //this.ListClientL.ItemsSource = this.clients;
+            this.ListProductL.ItemsSource = this.products;
         }
 
         public void LoadItems(List<Product> items)
@@ -43,7 +43,7 @@ namespace WpfCakeManager.MyUserControl.List
             this.products.Clear();
             foreach (var item in items)
             {
-                this.products.Add(item);
+                this.Products.Add(item);
             }
         }
     }

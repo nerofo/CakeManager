@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a order for shop
     /// </summary>
+    [Table("order")]
     public class Order : EntityBase
     {
         #region Attributes
@@ -31,7 +33,7 @@ namespace CakeManager.Entities
             this.client = client;
         }
         /// <summary>
-        /// Constructor
+        /// Constructor for order
         /// </summary>
         public Order()
         {
@@ -43,6 +45,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a quantity for order
         /// </summary>
+        [Column("quantity")]
         public int Quantity
         {
             get
@@ -59,6 +62,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a client for order
         /// </summary>
+        [Column("client")]
         public Client Client
         {
             get
@@ -75,6 +79,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a product for order
         /// </summary>
+        [Column("product")]
         public Product Product
         {
             get

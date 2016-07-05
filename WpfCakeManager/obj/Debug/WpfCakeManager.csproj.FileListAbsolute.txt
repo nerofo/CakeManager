@@ -48,3 +48,15 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeMa
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ProductListView.g.cs
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\MyUserControl\List\ProductListUserControl.baml
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ProductListView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\EntityFramework.dll
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\MySql.Data.dll
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\EntityFramework.xml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OwnerView.g.cs
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OwnerView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\MyUserControl\List\OrderListUserControl.g.cs
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderListView.g.cs
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\MyUserControl\List\OrderListUserControl.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderListView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderView.g.cs
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\OrderView.baml

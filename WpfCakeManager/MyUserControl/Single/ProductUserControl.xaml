@@ -13,20 +13,18 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <userControl:CategoryUserControl x:Name="CategoryUserControl" DataContext="Product.Category" Grid.Row="0" Grid.ColumnSpan="2" />
-        <Label Grid.Column="0" Grid.Row="1">Id :</Label>
-        <TextBlock x:Name="ProductIdTxtB" Text="{Binding Product.Id}" Grid.Row="1" Grid.Column="1"/>
-        <Label Grid.Column="0" Grid.Row="2">Nom:</Label>
-        <TextBox x:Name="ProductNameTxtB" Text="{Binding Product.Name}" Grid.Row="2" Grid.Column="1"/>
-        <Label Grid.Column="0" Grid.Row="3">Quantité disponible :</Label>
-        <TextBox x:Name="ProductPriceTxtB" Text="{Binding Product.Quantity}" Grid.Row="3" Grid.Column="1"/>
-        <Label Grid.Column="0" Grid.Row="5">Prix unitaire :</Label>
-        <TextBox x:Name="ProductQuantityTxtB" Text="{Binding Product.Price}" Grid.Row="4" Grid.Column="1"/>
+        <Label Grid.Column="0" Grid.Row="0">Id :</Label>
+        <TextBlock x:Name="ProductIdTxtB" Text="{Binding Product.Id}" Grid.Row="0" Grid.Column="1"/>
+        <Label Grid.Column="0" Grid.Row="1">Nom:</Label>
+        <TextBox x:Name="ProductNameTxtB" Text="{Binding Product.Name}" Grid.Row="1" Grid.Column="1"/>
+        <Label Grid.Column="0" Grid.Row="2">Quantité disponible :</Label>
+        <TextBox x:Name="ProductPriceTxtB" Text="{Binding Product.Quantity}" Grid.Row="2" Grid.Column="1"/>
+        <Label Grid.Column="0" Grid.Row="3">Prix unitaire :</Label>
+        <TextBox x:Name="ProductQuantityTxtB" Text="{Binding Product.Price}" Grid.Row="3" Grid.Column="1"/>
     </Grid>
 </baseUserControl:BaseUserControl>

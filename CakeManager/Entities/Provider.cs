@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a provider for shop
     /// </summary>
+    [Table("provider")]
     public class Provider : Address
     {
         #region Attributes
@@ -46,6 +48,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a name for provider
         /// </summary>
+        [Column("name")]
         public string Name
         {
             get
@@ -62,6 +65,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a phone for provider
         /// </summary>
+        [Column("phone")]
         public string Phone
         {
             get

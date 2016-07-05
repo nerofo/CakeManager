@@ -27,7 +27,7 @@ namespace WpfCakeManager.MyUserControl.List
         public ObservableCollection<Provider> Providers
         {
             get { return providers; }
-            set { providers = value; }
+            set { providers = value; this.OnPropertyChanged("Providers"); }
         }
 
         public ProviderListUserControl()
@@ -42,7 +42,7 @@ namespace WpfCakeManager.MyUserControl.List
             this.providers.Clear();
             foreach (var item in items)
             {
-                this.providers.Add(item);
+                this.Providers.Add(item);
             }
         }
     }

@@ -21,12 +21,12 @@ namespace WpfCakeManager.Views.Pages
     /// </summary>
     public partial class ProductListView : Page
     {
-        private ProviderListViewModel provideListViewModel;
+        private ProductListViewModel provideListViewModel;
 
         public ProductListView()
         {
             InitializeComponent();
-            //this.provideListViewModel = new ProviderListViewModel(this);
+            this.provideListViewModel = new ProductListViewModel(this);
         }
     }
 }

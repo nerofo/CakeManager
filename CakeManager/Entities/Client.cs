@@ -1,6 +1,7 @@
 ﻿using CakeManager.MyFaker;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a client for shop
     /// </summary>
+    [Table("client")]
     public class Client : Address
     {
         #region Attributes
@@ -51,6 +53,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a name for client
         /// </summary>
+        [Column("name")]
         public string Name
         {
             get
@@ -67,6 +70,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a phone for client
         /// </summary>
+        [Column("phone")]
         public string Phone
         {
             get
@@ -83,6 +87,7 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a mail for client
         /// </summary>
+        [Column("mail")]
         public string Mail
         {
             get
@@ -99,6 +104,10 @@ namespace CakeManager.Entities
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Load single one item random
+        /// </summary>
+        /// <returns></returns>
         public new Client LoadSingleItem()
         {
             Client result = new Client();
@@ -107,6 +116,10 @@ namespace CakeManager.Entities
             result.Phone = Faker.Number.RandomNumber().ToString();
             return result;
         }
+        /// <summary>
+        /// Load multiple items random
+        /// </summary>
+        /// <returns></returns>
         public new List<Client> LoadMultipleItem()
         {
             List<Client> result = new List<Client>();

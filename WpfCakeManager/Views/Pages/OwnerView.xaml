@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfCakeManager.Views.Pages.OwnerView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:userControl="clr-namespace:WpfCakeManager.MyUserControl.Single"
+      xmlns:local="clr-namespace:WpfCakeManager.Views.Pages"
+      mc:Ignorable="d" 
+      Title="ClientView">
+
+    <Grid>
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <userControl:OwnerUserControl x:Name="OwnerUserControl" Grid.Row="0"/>
+            <Button x:Name="ValidateB" Grid.Row="1" Margin="30" FontSize="24">OK</Button>
+        </Grid>
+    </Grid>
+</Page>
