@@ -41,11 +41,6 @@ namespace CakeManager.Entities
         /// </summary>
         public Address()
         {
-            this.Id = 1;
-            this.Street = "2 rue des loutres";
-            this.PostalCode = 35000;
-            this.City = "Rennes";
-            this.Country = "FRANCE";
         }
         #endregion
 

@@ -12,7 +12,9 @@ namespace CakeManager.Enums
         GENERICMYSQL = 1,
         [StringValue("Server=127.0.0.1;Port=3306;Database=cakemanager;Uid='root';Pwd=''")]
         LOCALMYQSL = 2,
-        [StringValue("http://localhost:63684/api/")]
+        [StringValue("Server=127.0.0.1;Port=3306;Database=cakemanagerApi;Uid='root';Pwd=''")]
+        LOCALMYQSLAPI = 4,
+        [StringValue("http://localhost:60485/api/")]
         LOCALAPI = 3,
     }
 }

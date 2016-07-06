@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeManager", "CakeManager\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCakeManager", "WpfCakeManager\WpfCakeManager.csproj", "{C4A5DCA4-4140-40CF-82CE-83246394872D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeManagerApi", "CakeManagerApi\CakeManagerApi.csproj", "{F7B37960-E9EE-4024-9008-A64793C620ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C4A5DCA4-4140-40CF-82CE-83246394872D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4A5DCA4-4140-40CF-82CE-83246394872D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4A5DCA4-4140-40CF-82CE-83246394872D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B37960-E9EE-4024-9008-A64793C620ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B37960-E9EE-4024-9008-A64793C620ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B37960-E9EE-4024-9008-A64793C620ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B37960-E9EE-4024-9008-A64793C620ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

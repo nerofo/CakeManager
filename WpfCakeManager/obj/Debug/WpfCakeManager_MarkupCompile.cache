@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\App.xaml
-21416098912
+2527659898
 
-35-1922025423
+411559094742
 19-1620526219
-MyUserControl\List\OrderListUserControl.xaml;MyUserControl\List\ProductListUserControl.xaml;MyUserControl\List\ClientListUserControl.xaml;MyUserControl\List\ProviderListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\CategoryUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;Views\NavigationWindows.xaml;Views\Pages\OrderView.xaml;Views\Pages\AddressView.xaml;Views\Pages\OrderListView.xaml;Views\Pages\OwnerView.xaml;Views\Pages\ProductListView.xaml;Views\Pages\ProviderListView.xaml;Views\Pages\ClientListView.xaml;Views\Pages\ClientView.xaml;Views\Pages\MenuView.xaml;
+MyUserControl\List\CategoryListUserControl.xaml;MyUserControl\List\ShopListUserControl.xaml;MyUserControl\List\OrderListUserControl.xaml;MyUserControl\List\ProductListUserControl.xaml;MyUserControl\List\ClientListUserControl.xaml;MyUserControl\List\ProviderListUserControl.xaml;MyUserControl\Single\AddressUserControl.xaml;MyUserControl\Single\CategoryUserControl.xaml;MyUserControl\Single\ClientUserControl.xaml;MyUserControl\Single\OrderUserControl.xaml;MyUserControl\Single\OwnerUserControl.xaml;MyUserControl\Single\ProductUserControl.xaml;MyUserControl\Single\ProviderUserControl.xaml;Views\NavigationWindows.xaml;Views\Pages\CategoryListView.xaml;Views\Pages\ShopListView.xaml;Views\Pages\OrderView.xaml;Views\Pages\AddressView.xaml;Views\Pages\OrderListView.xaml;Views\Pages\OwnerView.xaml;Views\Pages\ProductListView.xaml;Views\Pages\ProviderListView.xaml;Views\Pages\ClientListView.xaml;Views\Pages\ClientView.xaml;Views\Pages\ShopView.xaml;
 
 False
 

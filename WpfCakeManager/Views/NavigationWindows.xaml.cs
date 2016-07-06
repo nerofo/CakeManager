@@ -1,4 +1,5 @@
-﻿using CakeManager.Database;
+﻿using CakeManager.API;
+using CakeManager.Database;
 using CakeManager.Entities;
 using CakeManager.Enums;
 using System;
@@ -28,7 +29,18 @@ namespace WpfCakeManager.Views
         public NavigationWindows1()
         {
             InitializeComponent();
-            this.NavigationService.Navigate(new MenuView());
+            this.NavigationService.Navigate(new ShopListView());
+        }
+
+        public async void testApiConnection()
+        {
+            WebServiceManager<Client> webService = new WebServiceManager<Client>(DataConnectionResource.LOCALAPI);
+            Client client1 = new Client().LoadSingleItem();
+            Client apiResult;
+            //envoi enregistrer client a l'api
+            await webService.Post(client1);
+            //recuperation d'un client via l'id d'un client
+            apiResult = await webService.Get(client1.Id);
         }
     }
 }

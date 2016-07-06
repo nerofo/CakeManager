@@ -40,14 +40,7 @@ namespace CakeManager.Entities
         /// </summary>
         public Client()
         {
-            //this.id = 1;
-            //this.Name = "Cucu";
-            //this.Phone = "0299874125";
-            //this.Mail = "laloutre@zoo.fr";
-            //this.Street = "2 rue des loutres";
-            //this.PostalCode = 35000;
-            //this.City = "Rennes";
-            //this.Country = "FRANCE";
+
         }
         #endregion
 

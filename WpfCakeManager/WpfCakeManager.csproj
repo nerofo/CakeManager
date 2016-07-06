@@ -66,6 +66,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MyUserControl\List\CategoryListUserControl.xaml.cs">
+      <DependentUpon>CategoryListUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyUserControl\List\ShopListUserControl.xaml.cs">
+      <DependentUpon>ShopListUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyUserControl\List\OrderListUserControl.xaml.cs">
       <DependentUpon>OrderListUserControl.xaml</DependentUpon>
     </Compile>
@@ -82,9 +88,11 @@
       <DependentUpon>CategoryUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\AddressViewModel.cs" />
+    <Compile Include="ViewModel\CategoryListViewModel.cs" />
     <Compile Include="ViewModel\ClientListViewModel.cs" />
     <Compile Include="ViewModel\ClientViewModel.cs" />
-    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="ViewModel\ShopListViewModel.cs" />
+    <Compile Include="ViewModel\ShopViewModel.cs" />
     <Compile Include="ViewModel\OrderListViewModel.cs" />
     <Compile Include="ViewModel\OrderViewModel.cs" />
     <Compile Include="ViewModel\OwnerViewModel.cs" />
@@ -92,6 +100,12 @@
     <Compile Include="ViewModel\ProviderListViewModel.cs" />
     <Compile Include="Views\NavigationWindows.xaml.cs">
       <DependentUpon>NavigationWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\CategoryListView.xaml.cs">
+      <DependentUpon>CategoryListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ShopListView.xaml.cs">
+      <DependentUpon>ShopListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\OrderView.xaml.cs">
       <DependentUpon>OrderView.xaml</DependentUpon>
@@ -121,9 +135,17 @@
     <Compile Include="Views\Pages\ClientView.xaml.cs">
       <DependentUpon>ClientView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\MenuView.xaml.cs">
-      <DependentUpon>MenuView.xaml</DependentUpon>
+    <Compile Include="Views\Pages\ShopView.xaml.cs">
+      <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
+    <Page Include="MyUserControl\List\CategoryListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyUserControl\List\ShopListUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MyUserControl\List\OrderListUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -172,6 +194,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\CategoryListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\ShopListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Pages\OrderView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -204,7 +234,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\MenuView.xaml">
+    <Page Include="Views\Pages\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

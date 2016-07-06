@@ -21,6 +21,11 @@ namespace WpfCakeManager.MyUserControl.Single
     /// </summary>
     public partial class ClientUserControl : BaseUserControl
     {
+        //utiliser ceci pour la maj des données clientes
+        //MySQLManager<Client> manager1 = new MySQLManager<Client>(DataConnectionResource.LOCALMYQSL);
+        //MySQLManager<Address> manager2 = new MySQLManager<Address>(DataConnectionResource.LOCALMYQSL);
+        //manager1.Insert(client);
+
         private Client client;
 
         public Client Client
