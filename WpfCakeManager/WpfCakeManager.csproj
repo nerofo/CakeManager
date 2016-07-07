@@ -84,27 +84,42 @@
     <Compile Include="MyUserControl\List\ProviderListUserControl.xaml.cs">
       <DependentUpon>ProviderListUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyUserControl\Single\ShopUserControl.xaml.cs">
+      <DependentUpon>ShopUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyUserControl\Single\CategoryUserControl.xaml.cs">
       <DependentUpon>CategoryUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\CategoryViewModel.cs" />
     <Compile Include="ViewModel\AddressViewModel.cs" />
     <Compile Include="ViewModel\CategoryListViewModel.cs" />
     <Compile Include="ViewModel\ClientListViewModel.cs" />
     <Compile Include="ViewModel\ClientViewModel.cs" />
-    <Compile Include="ViewModel\ShopListViewModel.cs" />
-    <Compile Include="ViewModel\ShopViewModel.cs" />
+    <Compile Include="ViewModel\ProductViewModel.cs" />
+    <Compile Include="ViewModel\Shop\ShopEditViewModel.cs" />
+    <Compile Include="ViewModel\Shop\ShopListViewModel.cs" />
+    <Compile Include="ViewModel\Shop\ShopViewModel.cs" />
     <Compile Include="ViewModel\OrderListViewModel.cs" />
     <Compile Include="ViewModel\OrderViewModel.cs" />
     <Compile Include="ViewModel\OwnerViewModel.cs" />
     <Compile Include="ViewModel\ProductListViewModel.cs" />
     <Compile Include="ViewModel\ProviderListViewModel.cs" />
-    <Compile Include="Views\NavigationWindows.xaml.cs">
+    <Compile Include="Views\Pages\ProductView.xaml.cs">
+      <DependentUpon>ProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\CategoryView.xaml.cs">
+      <DependentUpon>CategoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Window\NavigationWindows.xaml.cs">
       <DependentUpon>NavigationWindows.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\CategoryListView.xaml.cs">
       <DependentUpon>CategoryListView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\ShopListView.xaml.cs">
+    <Compile Include="Views\Pages\Shop\ShopEditView.xaml.cs">
+      <DependentUpon>ShopEditView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Shop\ShopListView.xaml.cs">
       <DependentUpon>ShopListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\OrderView.xaml.cs">
@@ -135,7 +150,7 @@
     <Compile Include="Views\Pages\ClientView.xaml.cs">
       <DependentUpon>ClientView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\ShopView.xaml.cs">
+    <Compile Include="Views\Pages\Shop\ShopView.xaml.cs">
       <DependentUpon>ShopView.xaml</DependentUpon>
     </Compile>
     <Page Include="MyUserControl\List\CategoryListUserControl.xaml">
@@ -161,6 +176,10 @@
     <Page Include="MyUserControl\List\ProviderListUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MyUserControl\Single\ShopUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MyUserControl\Single\AddressUserControl.xaml">
       <SubType>Designer</SubType>
@@ -190,7 +209,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\NavigationWindows.xaml">
+    <Page Include="Views\Pages\ProductView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\CategoryView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Window\NavigationWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,7 +225,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Pages\ShopListView.xaml">
+    <Page Include="Views\Pages\Shop\ShopEditView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Pages\Shop\ShopListView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -234,7 +265,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\ShopView.xaml">
+    <Page Include="Views\Pages\Shop\ShopView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

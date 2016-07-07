@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CakeManager.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +24,10 @@ namespace WpfCakeManager.Views.Pages
     {
         private ShopViewModel shopViewModel;
 
-        public ShopView()
+        public ShopView(Shop shop)
         {
             InitializeComponent();
-            this.shopViewModel = new ShopViewModel(this);
+            this.shopViewModel = new ShopViewModel(this, shop);
         }
     }
 }

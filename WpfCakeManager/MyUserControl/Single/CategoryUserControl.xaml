@@ -16,7 +16,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="0">Id :</Label>
-        <TextBox x:Name="CategoryIdTxtB" Text="{Binding Category.Id}" Grid.Row="0" Grid.Column="1"/>
+        <TextBlock x:Name="CategoryIdTxtB" Text="{Binding Category.Id}" Grid.Row="0" Grid.Column="1"/>
         <Label Grid.Row="1" Grid.Column="0">Name :</Label>
         <TextBox x:Name="CategoryNameTxtB" Text="{Binding Category.Name}" Grid.Row="1" Grid.Column="1"/>
     </Grid>

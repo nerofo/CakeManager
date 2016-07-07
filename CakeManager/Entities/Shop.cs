@@ -19,6 +19,7 @@ namespace CakeManager.Entities
         private List<Owner> owner;
         private Address address;
         private List<Product> product;
+        private List<Category> categories;
         #endregion
 
         #region Constructor
@@ -30,6 +31,8 @@ namespace CakeManager.Entities
             this.client = new List<Client>();
             this.owner = new List<Owner>();
             this.product = new List<Product>();
+            this.address = new Address();
+            this.categories = new List<Category>();
         }
         /// <summary>
         /// Constructor with arguments
@@ -90,6 +93,7 @@ namespace CakeManager.Entities
         /// Define or return a address for shop
         /// </summary>
         [Column("address")]
+        [ForeignKey("Address_Id")]
         public Address Address
         {
             get { return address; }
@@ -104,6 +108,17 @@ namespace CakeManager.Entities
             get { return product; }
             set { product = value; this.OnPropertyChanged("Products"); }
         }
+        /// <summary>
+        /// Define or return a list of category
+        /// </summary>
+        [Column("category")]
+        public List<Category> Categories
+        {
+            get { return categories; }
+            set { categories = value; this.OnPropertyChanged("Categories"); }
+        }
+
+        public int Address_Id { get; set; }
         #endregion
 
         #region Methods

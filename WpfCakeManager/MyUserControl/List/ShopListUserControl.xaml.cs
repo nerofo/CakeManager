@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CakeManager.Entities;
 using System.Collections.ObjectModel;
+using CakeManager.Database;
+using CakeManager.Enums;
 
 namespace WpfCakeManager.MyUserControl.List
 {
@@ -38,10 +40,10 @@ namespace WpfCakeManager.MyUserControl.List
             this.ListShopL.ItemsSource = this.shops;
         }
 
-        public void LoadItems(List<Shop> items)
+        public void LoadItems(List<Shop> shops)
         {
             this.shops.Clear();
-            foreach (var item in items)
+            foreach (var item in shops)
             {
                 this.shops.Add(item);
             }

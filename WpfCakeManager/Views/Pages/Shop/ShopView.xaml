@@ -22,16 +22,16 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label FontSize="24" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">CakeManager (ne gère pas que des gateaux)</Label>
-        <Label FontSize="24" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Menu principal Magasin</Label>
+        <Label x:Name="MenuLabel" FontSize="24" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Menu principal Magasin</Label>
         
         <Label FontSize="24" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion utilisateur</Label>
-        <Button x:Name="ClientManagerBtn" Content="Gestion des clients" Margin="20" Grid.Row="3" Grid.Column="0"/>
-        <Button x:Name="ProviderManagerBtn" Content="Gestion des fournisseurs" Margin="20" Grid.Row="3" Grid.Column="1"/>
-        <Button x:Name="OwnerManagerBtn" Content="Modifier infos propriétaire" Margin="20" Grid.Row="3" Grid.Column="2"/>
+        <Button IsEnabled="False" x:Name="ClientManagerBtn" Content="Gestion des clients" Margin="20" Grid.Row="3" Grid.Column="0"/>
+        <Button IsEnabled="False" x:Name="ProviderManagerBtn" Content="Gestion des fournisseurs" Margin="20" Grid.Row="3" Grid.Column="1"/>
+        <Button IsEnabled="False" x:Name="OwnerManagerBtn" Content="Modifier infos propriétaire" Margin="20" Grid.Row="3" Grid.Column="2"/>
 
         <Label FontSize="24" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion commande et produit</Label>
         <Button x:Name="CategoryManagerBtn" Content="Gestion des catégories" Margin="20" Grid.Row="5" Grid.Column="0"/>
         <Button x:Name="ProductManagerBtn" Content="Gestion des produits" Margin="20" Grid.Row="5" Grid.Column="1"/>
-        <Button x:Name="OrderManagerBtn" Content="Gestion des commandes" Margin="20" Grid.Row="5" Grid.Column="2"/>
+        <Button IsEnabled="False" x:Name="OrderManagerBtn" Content="Gestion des commandes" Margin="20" Grid.Row="5" Grid.Column="2"/>
     </Grid>
 </Page>

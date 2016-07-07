@@ -15,8 +15,9 @@ namespace CakeManager.Entities
     {
         #region Attributes
         private String name;
-        private Category parentCategory;
         private List<Product> product;
+
+        private Shop shop;
         #endregion
 
         #region Constructor
@@ -26,11 +27,10 @@ namespace CakeManager.Entities
         /// <param name="name"></param>
         /// <param name="product"></param>
         /// <param name="parentCategory"></param>
-        public Category(String name, List<Product> product, Category parentCategory = null)
+        public Category(String name, List<Product> product)
         {
             this.Name = name;
             this.Product = product;
-            this.ParentCategory = parentCategory;
             this.Product = new List<Product>();
         }
         /// <summary>
@@ -60,22 +60,6 @@ namespace CakeManager.Entities
             }
         }
         /// <summary>
-        /// Define or return a parentcategory
-        /// </summary>
-        [Column("parentCategory")]
-        public Category ParentCategory
-        {
-            get
-            {
-                return parentCategory;
-            }
-
-            set
-            {
-                parentCategory = value;
-            }
-        }
-        /// <summary>
         /// Define or return a product
         /// </summary>
         [Column("product")]
@@ -91,6 +75,21 @@ namespace CakeManager.Entities
                 product = value;
             }
         }
+
+        [Column("shop")]
+        public Shop Shop
+        {
+            get
+            {
+                return shop;
+            }
+
+            set
+            {
+                shop = value;
+            }
+        }
+        //public int Shop_Id { get; set; }
         #endregion
 
         #region Methods

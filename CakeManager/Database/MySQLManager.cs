@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,7 +39,11 @@ namespace CakeManager.Database
 
         public async Task<TEntity> Update(TEntity item)
         {
-            this.Entry<TEntity>(item);
+            await Task.Factory.StartNew(() =>
+            {
+                this.DbSetT.Attach(item);
+                this.Entry<TEntity>(item);
+            });
             await this.SaveChangesAsync();
             return item;
         }
@@ -56,6 +61,12 @@ namespace CakeManager.Database
         public async Task<TEntity> Get(Int32 id)
         {
             return await this.DbSetT.FindAsync(id) as TEntity;
+        }
+
+        public List<TEntity> GetList(String table, String column, Int32 value)
+        {
+            List<TEntity> items = this.DbSetT.SqlQuery("SELECT * FROM " + table + " WHERE " + column + " = " + value).ToList<TEntity>();
+            return items;
         }
 
         public async Task<IEnumerable<TEntity>> Get()

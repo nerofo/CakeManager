@@ -1,4 +1,5 @@
 ﻿using CakeManager.Entities;
+using CakeManager.Session;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ using WpfCakeManager.Views.Pages;
 
 namespace WpfCakeManager.ViewModel
 {
-    class ShopViewModel
+    public class ShopViewModel
     {
         #region Attributes
         private ShopView shopView;
-        
+        private Shop shop;
         #endregion
 
         #region Constructor
@@ -20,9 +21,12 @@ namespace WpfCakeManager.ViewModel
         /// Constructor for menu
         /// </summary>
         /// <param name="shopView"></param>
-        public ShopViewModel(ShopView shopView)
+        public ShopViewModel(ShopView shopView, Shop shop)
         {
             this.shopView = shopView;
+            this.shop = shop;
+            this.shopView.MenuLabel.Content = "Menu principal Magasin " + shop.Name;
+            Session.Shop = shop;
             this.shopView.ClientManagerBtn.Click += ClientManagerBtn_Click;
             this.shopView.ProviderManagerBtn.Click += ProviderManagerBtn_Click;
             this.shopView.ProductManagerBtn.Click += ProductManagerBtn_Click;
@@ -30,7 +34,6 @@ namespace WpfCakeManager.ViewModel
             this.shopView.OrderManagerBtn.Click += OrderManagerBtn_Click;
             this.shopView.CategoryManagerBtn.Click += CategoryManagerBtn_Click;
         }
-
 
         #endregion
 
