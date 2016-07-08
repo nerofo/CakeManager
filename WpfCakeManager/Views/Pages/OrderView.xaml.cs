@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CakeManager.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,10 +36,10 @@ namespace WpfCakeManager.Views
             }
         }
 
-        public OrderView()
+        public OrderView(Order order, Client client)
         {
             InitializeComponent();
-            this.OrderViewModel = new OrderViewModel(this);
+            this.OrderViewModel = new OrderViewModel(this, order, client);
         }
     }
 }

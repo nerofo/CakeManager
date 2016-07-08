@@ -16,7 +16,8 @@ namespace CakeManager.Entities
         #region Attributes
         private String name;
         private String firstname;
-        private Address address;
+        private Int32 address;
+        private Int32 shopId;
         #endregion
 
         #region Constructor
@@ -77,8 +78,8 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a address for owner
         /// </summary>
-        [Column("address")]
-        public Address Address
+        [Column("addressId")]
+        public Int32 AddressId
         {
             get
             {
@@ -90,7 +91,22 @@ namespace CakeManager.Entities
                 address = value;
             }
         }
+        /// <summary>
+        /// Define or return a shop for owner
+        /// </summary>
+        [Column("shopId")]
+        public Int32 ShopId
+        {
+            get
+            {
+                return shopId;
+            }
 
+            set
+            {
+                shopId = value;
+            }
+        }
         #endregion
 
         #region Methods

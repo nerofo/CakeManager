@@ -16,8 +16,9 @@ namespace CakeManager.Entities
         #region Attributes
         private String name;
         private Decimal price;
-        private Category category;
-        private Int32 quantity;
+        private Int32 category;
+        private Int32 shopId;
+        private Decimal quantity;
         #endregion
 
         #region Constructor
@@ -27,11 +28,13 @@ namespace CakeManager.Entities
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="price"></param>
-        public Product(Int32 id, String name, Decimal price)
+        /// <param name="quantity"></param>
+        public Product(Int32 id, String name, Decimal price, Decimal quantity)
         {
             this.id = id;
             this.name = name;
             this.price = price;
+            this.quantity = quantity;
         }
         /// <summary>
         /// Constructor for product
@@ -63,8 +66,8 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a name for product
         /// </summary>
-        [Column("category")]
-        public Category Category
+        [Column("categoryId")]
+        public Int32 CategoryId
         {
             get
             {
@@ -98,7 +101,7 @@ namespace CakeManager.Entities
         /// Define or return a quantity for product
         /// </summary>
         [Column("quantity")]
-        public Int32 Quantity
+        public Decimal Quantity
         {
             get
             {
@@ -107,13 +110,34 @@ namespace CakeManager.Entities
 
             set
             {
-                price = value;
+                quantity = value;
                 this.OnPropertyChanged("Quantity");
+            }
+        }
+        /// <summary>
+        /// Define or return a shop for product
+        /// </summary>
+        [Column("shopId")]
+        public Int32 ShopId
+        {
+            get
+            {
+                return shopId;
+            }
+
+            set
+            {
+                shopId = value;
             }
         }
         #endregion
 
         #region Methods
+        override
+        public String ToString()
+        {
+            return this.id + "-" + this.name;
+        }
         #endregion
     }
 }

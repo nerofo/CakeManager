@@ -1,4 +1,7 @@
-﻿using CakeManager.Entities;
+﻿using CakeManager.API;
+using CakeManager.Database;
+using CakeManager.Entities;
+using CakeManager.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +25,8 @@ namespace WpfCakeManager.MyUserControl.Single
     public partial class ProductUserControl : BaseUserControl
     {
         private Product product;
+        private MySQLManager<Product> productManager;
+        private WebServiceManager<Product> productWebService;
 
         public Product Product
         {
@@ -38,6 +43,27 @@ namespace WpfCakeManager.MyUserControl.Single
             InitializeComponent();
             //this.CategoryUserControl.Category = this.product.Category;
             this.DataContext = this;
+            this.productManager = new MySQLManager<Product>(DataConnectionResource.LOCALMYQSL);
+            this.productWebService = new WebServiceManager<Product>(DataConnectionResource.LOCALAPI);
+        }
+
+        public async void Load(Product product)
+        {
+            this.product = product;
+        }
+
+        public Int32 Update()
+        {
+            if (this.product.Id == 0)
+            {
+                //this.address = this.addressWebService.Post(this.address).Result;
+                this.product = this.productManager.Insert(this.product).Result;
+            }
+            else
+            {
+
+            }
+            return this.product.Id;
         }
     }
 }

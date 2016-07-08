@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CakeManager.Entities;
+using CakeManager.Database;
+using CakeManager.Enums;
+using CakeManager.Session;
 
 namespace WpfCakeManager.MyUserControl.Single
 {
@@ -21,12 +24,10 @@ namespace WpfCakeManager.MyUserControl.Single
     /// </summary>
     public partial class ClientUserControl : BaseUserControl
     {
-        //utiliser ceci pour la maj des données clientes
-        //MySQLManager<Client> manager1 = new MySQLManager<Client>(DataConnectionResource.LOCALMYQSL);
-        //MySQLManager<Address> manager2 = new MySQLManager<Address>(DataConnectionResource.LOCALMYQSL);
-        //manager1.Insert(client);
 
         private Client client;
+        private MySQLManager<Client> clientManager;
+        private Address address;
 
         public Client Client
         {
@@ -42,8 +43,40 @@ namespace WpfCakeManager.MyUserControl.Single
         {
             InitializeComponent();
             this.DataContext = this;
-            Address address = new Address();
-            this.AddressUserControl.Address = address;
+            this.clientManager = new MySQLManager<Client>(DataConnectionResource.LOCALMYQSL);
+        }
+
+        public async void Load(Int32 clientId)
+        {
+            if (clientId != 0)
+            {
+                this.client = await this.clientManager.Get(clientId);
+                this.AddressUserControl.Load(this.client.AddressId);
+            }
+            else
+            {
+                this.client = new Client();
+                this.AddressUserControl.Address = new Address();
+            }
+                
+        }
+
+        public Int32 Update()
+        {
+            this.client.ShopId = Session.Shop.Id;
+            if (this.client.Id == 0)
+            {
+                Int32 addressId = this.AddressUserControl.Update();
+                this.client.AddressId = addressId;
+                this.clientManager.Insert(this.client);
+                //this.address = this.addressWebService.Post(this.address).Result;
+                //this.category = this.categoryManager.Insert(this.category).Result;
+            }
+            else
+            {
+                
+            }
+            return this.client.Id;
         }
     }
 }

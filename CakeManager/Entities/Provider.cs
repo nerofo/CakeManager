@@ -16,7 +16,7 @@ namespace CakeManager.Entities
         #region Attributes
         private String name;
         private String phone;
-        private Address address;
+        private Int32 address;
         #endregion
 
         #region Constructor
@@ -77,8 +77,8 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a address for provider
         /// </summary>
-        [Column("address")]
-        public Address Address
+        [Column("addressId")]
+        public Int32 Address
         {
             get
             {

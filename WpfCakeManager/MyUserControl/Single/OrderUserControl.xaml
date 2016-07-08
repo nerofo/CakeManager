@@ -16,7 +16,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <uc:ProductUserControl x:Name="ProductUserControl" DataContext="Order.Product" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="0" Grid.Row="0">Choisir un produit:</Label>
+        <ComboBox x:Name="ListProductCB" Grid.Row="0" Grid.Column="1"/>
         <Label Grid.Column="0" Grid.Row="1">Quantité :</Label>
         <TextBox x:Name="ProductQuantityTxtB" Text="{Binding Order.Quantity}" Grid.Column="1" Grid.Row="1"/>
     </Grid>

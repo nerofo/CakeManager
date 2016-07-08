@@ -15,7 +15,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <userControl:ClientUserControl x:Name="ClientUserControl" Grid.Row="0"/>
-            <Button x:Name="ValidateB" Grid.Row="1" Margin="30" FontSize="24">OK</Button>
+            <Button x:Name="ValidateB" Grid.Row="1" Margin="30" FontSize="24">Valider</Button>
         </Grid>
     </Grid>
 </Page>

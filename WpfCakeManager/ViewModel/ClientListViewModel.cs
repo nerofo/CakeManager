@@ -18,6 +18,13 @@ namespace WpfCakeManager.ViewModel
         {
             this.clientListView = clientListView;
             this.clientListView.EditBtn.Click += EditBtn_Click;
+            this.clientListView.AddB.Click += AddB_Click;
+            this.clientListView.ClientListUserControl.LoadItems();
+        }
+
+        private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.clientListView.NavigationService.Navigate(new ClientView());
         }
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)

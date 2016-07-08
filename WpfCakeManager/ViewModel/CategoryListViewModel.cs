@@ -29,8 +29,7 @@ namespace WpfCakeManager.ViewModel
         private async void Load()
         {
             Shop shop = Session.Shop;
-            List <Category> categories = this.categoryManager.GetList("category", "Shop_Id", shop.Id);
-            this.categoryListView.CategoryListUserControl.LoadItems(categories);
+            this.categoryListView.CategoryListUserControl.LoadItems(shop.Id);
         }
 
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)

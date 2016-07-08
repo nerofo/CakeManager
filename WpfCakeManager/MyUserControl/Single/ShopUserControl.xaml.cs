@@ -25,7 +25,8 @@ namespace WpfCakeManager.MyUserControl.Single
     public partial class ShopUserControl : BaseUserControl
     {
         private Shop shop;
-        private MySQLManager<Shop> database;
+        private MySQLManager<Shop> shopManager;
+        private WebServiceManager<Shop> shopWebService;
 
         public Shop Shop
         {
@@ -34,7 +35,6 @@ namespace WpfCakeManager.MyUserControl.Single
             {
                 shop = value;
                 this.OnPropertyChanged("Shop");
-                this.AddressUserControl.Address = shop.Address;
             }
         }
 
@@ -42,6 +42,32 @@ namespace WpfCakeManager.MyUserControl.Single
         {
             InitializeComponent();
             this.DataContext = this;
+            this.shopWebService = new WebServiceManager<Shop>(DataConnectionResource.LOCALAPI);
+            this.shopManager = new MySQLManager<Shop>(DataConnectionResource.LOCALMYQSL);
+        }
+
+        public async void Load(Shop shop)
+        {
+            this.shop = shop;
+            if (shop.Address != 0)
+                this.AddressUserControl.Load(shop.Address);
+            else
+                this.AddressUserControl.Address = new Address();
+        }
+        
+        public Int32 Update()
+        {
+            if (this.shop.Id == 0)
+            {
+                this.shop.Address = this.AddressUserControl.Update();
+                //this.shop = this.shopWebService.Post(this.shop).Result;
+                this.shopManager.Insert(this.shop);
+            }
+            else
+            {
+
+            }
+            return this.shop.Id;
         }
     }
 }

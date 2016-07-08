@@ -17,7 +17,14 @@ namespace WpfCakeManager.ViewModel
             this.clientView = clientView;
 
             Client client = new Client();
-            this.clientView.ClientUserControl.Client = client;
+            this.clientView.ClientUserControl.Load(0);
+            this.clientView.ValidateB.Click += ValidateB_Click;
+        }
+
+        private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.clientView.ClientUserControl.Update();
+            this.clientView.NavigationService.Navigate(new ClientListView());
         }
     }
 }

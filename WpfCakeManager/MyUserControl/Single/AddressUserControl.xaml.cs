@@ -1,4 +1,7 @@
-﻿using CakeManager.Entities;
+﻿using CakeManager.API;
+using CakeManager.Database;
+using CakeManager.Entities;
+using CakeManager.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +25,8 @@ namespace WpfCakeManager.MyUserControl.Single
     public partial class AddressUserControl : BaseUserControl
     {
         private Address address;
+        private MySQLManager<Address> addressManager;
+        private WebServiceManager<Address> addressWebService;
 
         public Address Address
         {
@@ -37,6 +42,27 @@ namespace WpfCakeManager.MyUserControl.Single
         {
             InitializeComponent();
             this.DataContext = this;
+            this.addressWebService = new WebServiceManager<Address>(DataConnectionResource.LOCALAPI);
+            this.addressManager = new MySQLManager<Address>(DataConnectionResource.LOCALMYQSL);
+        }
+
+        public async void Load(Int32 addressId)
+        {
+            this.address = await this.addressManager.Get(addressId);
+        }
+
+        public Int32 Update()
+        {
+            if (this.address.Id == 0)
+            {
+                //this.address = this.addressWebService.Post(this.address).Result;
+                this.address = this.addressManager.Insert(this.address).Result;
+            }
+            else
+            {
+
+            }
+            return this.address.Id;
         }
     }
 }

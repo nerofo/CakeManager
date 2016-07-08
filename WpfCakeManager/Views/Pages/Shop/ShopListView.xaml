@@ -19,10 +19,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label FontSize="12" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Choisser votre magasin</Label>
+        <Label FontSize="12" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Choisisser votre magasin"/>
         <uc:ShopListUserControl x:Name="ShopListUserControl" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
         <Button x:Name="ValidateBtn" Content="Valider" Grid.Row="2" Grid.Column="0" Margin="20"/>
-        <Button x:Name="EditBtn" Content="Editer" Grid.Row="2" Grid.Column="2" Margin="20"/>
+        <Button IsEnabled="False" x:Name="EditBtn" Content="Editer" Grid.Row="2" Grid.Column="2" Margin="20"/>
         <Button x:Name="AddBtn" Content="Ajouter" Grid.Row="2" Grid.Column="1" Margin="20"/>
     </Grid>
 </Page>

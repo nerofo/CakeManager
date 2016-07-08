@@ -10,13 +10,13 @@ namespace CakeManager.Entities
     /// <summary>
     /// Describe a order for shop
     /// </summary>
-    [Table("order")]
+    [Table("orderClient")]
     public class Order : EntityBase
     {
         #region Attributes
         private Int32 quantity;
-        private Product product;
-        private Client client;
+        private Int32 product;
+        private Int32 client;
         #endregion
 
         #region Constructor
@@ -26,10 +26,9 @@ namespace CakeManager.Entities
         /// <param name="quantity"></param>
         /// <param name="product"></param>
         /// <param name="client"></param>
-        public Order(Int32 quantity, Product product, Client client)
+        public Order(Int32 quantity, Int32 product, Int32 client)
         {
             this.quantity = quantity;
-            this.product = product;
             this.client = client;
         }
         /// <summary>
@@ -62,8 +61,8 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a client for order
         /// </summary>
-        [Column("client")]
-        public Client Client
+        [Column("clientId")]
+        public Int32 ClientId
         {
             get
             {
@@ -79,8 +78,8 @@ namespace CakeManager.Entities
         /// <summary>
         /// Define or return a product for order
         /// </summary>
-        [Column("product")]
-        public Product Product
+        [Column("productId")]
+        public Int32 ProductId
         {
             get
             {

@@ -24,8 +24,7 @@ namespace WpfCakeManager.ViewModel
             this.productListView.SearchProductBtn.Click += SearchProductBtn_Click;
             this.productListView.AddB.Click += AddB_Click;
             this.categoryManager = new MySQLManager<Category>(DataConnectionResource.LOCALMYQSL);
-            LoadCategory();
-            //this.productListView.ProductListUserControl.LoadItems(products);
+            this.productListView.CategoryListUserControl.LoadItems(Session.Shop.Id);
         }
 
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -36,7 +35,8 @@ namespace WpfCakeManager.ViewModel
             else
             {
                 Product product = new Product();
-                product.Category = category;
+                product.CategoryId = category.Id;
+                product.ShopId = Session.Shop.Id;
                 this.productListView.NavigationService.Navigate(new ProductView(product));
             }
                 
@@ -45,22 +45,12 @@ namespace WpfCakeManager.ViewModel
         private void SearchProductBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             Category category = (Category)this.productListView.CategoryListUserControl.ListCategoryL.SelectedItem;
-            LoadProduct(category);
-        }
-
-
-
-        private async void LoadCategory()
-        {
-            Shop shop = Session.Shop;
-            List<Category> categories = this.categoryManager.GetList("category", "Shop_Id", shop.Id);
-            this.productListView.CategoryListUserControl.LoadItems(categories);
-        }
-
-        private async void LoadProduct(Category category)
-        {
-            List<Product> products = this.productManager.GetList("product", "Category_Id", category.Id);
-            this.productListView.ProductListUserControl.LoadItems(products);
+            if (category == null)
+                MessageBox.Show("Veuiller selectionner une catégorie");
+            else
+            {
+                this.productListView.ProductListUserControl.LoadItems(category.Id);
+            }
         }
     }
 }

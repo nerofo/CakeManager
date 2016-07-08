@@ -22,7 +22,7 @@
         <TextBox x:Name="AddressStreetTxtB" Text="{Binding Address.Street}" Grid.Row="1" Grid.Column="1"/>
         <Label Grid.Row="2" Grid.Column="0">Code postal :</Label>
         <TextBox x:Name="AddressPostalCodeTxtB" Text="{Binding Address.PostalCode}" Grid.Row="2" Grid.Column="1"/>
-        <Label Grid.Row="3" Grid.Column="0">City :</Label>
+        <Label Grid.Row="3" Grid.Column="0">Ville :</Label>
         <TextBox x:Name="AddressCityTxtB" Text="{Binding Address.City}" Grid.Row="3" Grid.Column="1"/>
         <Label Grid.Row="4" Grid.Column="0">Pays :</Label>
         <TextBox x:Name="AddressCountryTxtB" Text="{Binding Address.Country}" Grid.Row="4" Grid.Column="1"/>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WpfCakeManager.Views;
+using WpfCakeManager.Views.Pages;
 
 namespace WpfCakeManager.ViewModel
 {
@@ -16,8 +17,9 @@ namespace WpfCakeManager.ViewModel
         private ShopEditView shopEditView;
         private Shop shop;
         private MySQLManager<Shop> shopManager;
-        private MySQLManager<Address> addressManager;
+
         private WebServiceManager<Shop> shopWebService;
+        
 
         public ShopEditViewModel(ShopEditView shopEditView, Shop shop)
         {
@@ -25,41 +27,16 @@ namespace WpfCakeManager.ViewModel
             this.shopEditView.ValidateB.Click += ValidateB_Click;
 
             this.shopManager = new MySQLManager<Shop>(DataConnectionResource.LOCALMYQSL);
-            this.addressManager = new MySQLManager<Address>(DataConnectionResource.LOCALMYQSL);
             this.shopWebService = new WebServiceManager<Shop>(DataConnectionResource.LOCALAPI);
 
-            Load(shop);
-        }
-
-        private async void Load(Shop shop)
-        {
-            if (shop.Id != 0)
-            {
-                shop.Address = await addressManager.Get(shop.Address_Id);
-                this.shopEditView.ShopUserControl.Shop = shop;
-            }
-            this.shop = shop;
-            this.shopEditView.ShopUserControl.Shop = shop;
-        }
-
-        private async void Update(Shop shop)
-        {
-            if (this.shop.Id == 0)
-            {
-                shop = await this.shopWebService.Post(shop);
-                this.shopManager.Insert(shop);
-            }
-            else
-            {
-                shop = await this.shopWebService.Put(shop);
-                this.shopManager.Update(shop);
-            }
+            this.shopEditView.ShopUserControl.Load(shop);
         }
 
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            Update(this.shop);
-            this.shopEditView.NavigationService.GoBack();
+            //Update(this.shop);
+            this.shopEditView.ShopUserControl.Update();
+            this.shopEditView.NavigationService.Navigate(new ShopListView());
         }
     }
 }

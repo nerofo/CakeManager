@@ -21,7 +21,7 @@
         <uc:CategoryListUserControl x:Name="CategoryListUserControl" Grid.Row="0" Grid.Column="0"/>
         <Button x:Name="SearchProductBtn" Content="Rechercher" Grid.Row="0" Grid.Column="1" Margin="5"/>
         <uc:ProductListUserControl x:Name="ProductListUserControl" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
-        <Button x:Name="EditBtn" Content="Editer" Grid.Row="2" Grid.Column="1" Margin="20"/>
+        <Button IsEnabled="false" x:Name="EditBtn" Content="Editer" Grid.Row="2" Grid.Column="1" Margin="20"/>
         <Button x:Name="AddB" Content="Ajouter" Grid.Row="2" Grid.Column="0" Margin="20"/>
     </Grid>
 </Page>

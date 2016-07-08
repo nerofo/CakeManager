@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CakeManager.Entities;
 using System.Collections.ObjectModel;
+using CakeManager.Database;
+using CakeManager.Enums;
+using CakeManager.Session;
 
 namespace WpfCakeManager.MyUserControl.List
 {
@@ -23,6 +26,7 @@ namespace WpfCakeManager.MyUserControl.List
     public partial class ClientListUserControl : BaseUserControl
     {
         private ObservableCollection<Client> clients;
+        private MySQLManager<Client> clientManager;
 
         public ObservableCollection<Client> Clients
         {
@@ -30,16 +34,17 @@ namespace WpfCakeManager.MyUserControl.List
             set { clients = value; this.OnPropertyChanged("Clients"); }
         }
 
-
         public ClientListUserControl()
         {
             InitializeComponent();
             this.clients = new ObservableCollection<Client>();
+            this.clientManager = new MySQLManager<Client>(DataConnectionResource.LOCALMYQSL);
             this.ListClientL.ItemsSource = this.clients;
         }
 
-        public void LoadItems(List<Client> items)
+        public void LoadItems()
         {
+            List<Client> items = this.clientManager.GetList("client", "shopId", Session.Shop.Id);
             this.clients.Clear();
             foreach (var item in items)
             {

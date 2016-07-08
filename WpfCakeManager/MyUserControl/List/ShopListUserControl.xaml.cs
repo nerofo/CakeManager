@@ -25,6 +25,7 @@ namespace WpfCakeManager.MyUserControl.List
     public partial class ShopListUserControl : BaseUserControl
     {
         private ObservableCollection<Shop> shops;
+        private MySQLManager<Shop> shopManager;
 
         public ObservableCollection<Shop> Shop
         {
@@ -37,11 +38,13 @@ namespace WpfCakeManager.MyUserControl.List
         {
             InitializeComponent();
             this.shops = new ObservableCollection<Shop>();
+            this.shopManager = new MySQLManager<Shop>(DataConnectionResource.LOCALMYQSL);
             this.ListShopL.ItemsSource = this.shops;
         }
 
-        public void LoadItems(List<Shop> shops)
+        public async void LoadItems()
         {
+            List<Shop> shops = await this.shopManager.Get() as List<Shop>;
             this.shops.Clear();
             foreach (var item in shops)
             {

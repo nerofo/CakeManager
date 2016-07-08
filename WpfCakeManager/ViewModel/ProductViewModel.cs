@@ -23,28 +23,15 @@ namespace WpfCakeManager.ViewModel
             this.productView = productView;
             this.productView.ValidateB.Click += ValidateB_Click;
             this.product = product;
+            this.productView.ProductUserControl.Load(product);
             this.productManager = new MySQLManager<Product>(DataConnectionResource.LOCALMYQSL);
             this.productWebService = new WebServiceManager<Product>(DataConnectionResource.LOCALAPI);
         }
 
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            Update(this.product);
-            this.productView.NavigationService.GoBack();
-        }
-
-        private async void Update(Product product)
-        {
-            if (this.product.Id == 0)
-            {
-                product = await this.productWebService.Post(product);
-                this.productManager.Insert(product);
-            }
-            else
-            {
-                product = await this.productWebService.Put(product);
-                this.productManager.Update(product);
-            }
+            this.productView.ProductUserControl.Update();
+            this.productView.NavigationService.Navigate(new ProductListView());
         }
     }
 }
