@@ -73,6 +73,11 @@
     <Compile Include="Entities\Base\EntityBase.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Client.cs" />
+    <Compile Include="Entities\Observable\IInvestor.cs" />
+    <Compile Include="Entities\Observable\Investor.cs" />
+    <Compile Include="Entities\Observable\Observable.cs" />
+    <Compile Include="Entities\Observable\Test\NotifiedClass.cs" />
+    <Compile Include="Entities\Observable\Test\ObersedClass.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\Owner.cs" />
     <Compile Include="Entities\Product.cs" />

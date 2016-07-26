@@ -1,6 +1,8 @@
 ﻿using CakeManager.API;
 using CakeManager.Database;
 using CakeManager.Entities;
+using CakeManager.Entities.Observable;
+using CakeManager.Entities.Observable.Test;
 using CakeManager.Enums;
 using System;
 using System.Collections.Generic;
@@ -29,6 +31,13 @@ namespace WpfCakeManager.Views
         public NavigationWindows1()
         {
             InitializeComponent();
+            //TEST OBSERVATION
+            //ObersedClass obs = new ObersedClass();
+            //NotifiedClass n1 = new NotifiedClass();
+            //NotifiedClass n2 = new NotifiedClass();
+            //obs.Attach(n1);
+            //obs.Attach(n2);
+            //obs.Notify();
             this.NavigationService.Navigate(new ShopListView());
         }
 
