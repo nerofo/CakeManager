@@ -24,7 +24,7 @@ namespace WpfCakeManager.ViewModel
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             this.clientView.ClientUserControl.Update();
-            this.clientView.NavigationService.Navigate(new ClientListView());
+            this.clientView.NavigationService.GoBack();
         }
     }
 }

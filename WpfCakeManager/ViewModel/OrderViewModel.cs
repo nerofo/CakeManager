@@ -23,7 +23,7 @@ namespace WpfCakeManager.ViewModel
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             this.orderView.OrderUserControl.Update();
-            this.orderView.NavigationService.Navigate(new OrderListView());
+            this.orderView.NavigationService.GoBack();
         }
     }
 }

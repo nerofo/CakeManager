@@ -32,11 +32,11 @@ namespace WpfCakeManager.ViewModel
             this.shopEditView.ShopUserControl.Load(shop);
         }
 
-        private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
+        private async void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             //Update(this.shop);
             this.shopEditView.ShopUserControl.Update();
-            this.shopEditView.NavigationService.Navigate(new ShopListView());
+            this.shopEditView.NavigationService.GoBack();
         }
     }
 }

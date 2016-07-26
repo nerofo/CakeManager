@@ -31,7 +31,7 @@ namespace WpfCakeManager.ViewModel
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             this.productView.ProductUserControl.Update();
-            this.productView.NavigationService.Navigate(new ProductListView());
+            this.productView.NavigationService.GoBack();
         }
     }
 }

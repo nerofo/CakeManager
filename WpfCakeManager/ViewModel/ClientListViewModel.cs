@@ -22,8 +22,14 @@ namespace WpfCakeManager.ViewModel
             this.clientListView.ClientListUserControl.LoadItems();
         }
 
+        private void NavigationService_LoadCompleted(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+            this.clientListView.ClientListUserControl.LoadItems();
+        }
+
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.clientListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
             this.clientListView.NavigationService.Navigate(new ClientView());
         }
 

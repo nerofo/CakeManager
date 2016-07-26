@@ -54,20 +54,35 @@ namespace WpfCakeManager.MyUserControl.Single
             else
                 this.AddressUserControl.Address = new Address();
         }
-        
+
         public Int32 Update()
         {
             if (this.shop.Id == 0)
             {
                 this.shop.Address = this.AddressUserControl.Update();
-                //this.shop = this.shopWebService.Post(this.shop).Result;
+                //this.shop = this.shopWebService.Post(this.shop);
                 this.shopManager.Insert(this.shop);
             }
             else
             {
-
+                this.shopManager.Update(this.shop);
             }
             return this.shop.Id;
         }
+
+        //public async Task<Int32> Update()
+        //{
+        //    if (this.shop.Id == 0)
+        //    {
+        //        this.shop.Address = this.AddressUserControl.Update();
+        //        this.shop = await this.shopWebService.Post(this.shop);
+        //        await this.shopManager.Insert(this.shop);
+        //    }
+        //    else
+        //    {
+        //        await this.shopManager.Update(this.shop);
+        //    }
+        //    return this.shop.Id;
+        //}
     }
 }

@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CakeManager.API.WebServiceManager&lt;T&gt;" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgAAAgAgABAAAAAAAAACAEAAAAAAABAABAAAAg=</HashCode>
+      <FileName>API\WebServiceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.AsyncTask.AsyncFactory" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAACAAAAAAAEAAAAAAAAAAQgAAAAAAAAAAA=</HashCode>
+      <FileName>AsyncTask\AsyncFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Database.FullDb" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABBAAAAAAAAACAQAAAACAAAAACABAAAAAAAAA=</HashCode>
+      <FileName>Database\FullDb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Database.MySQLManager&lt;TEntity&gt;" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAABAAAAAAAAAAAEIAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Database\MySQLManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Address" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIIAAACCAAAAIAAgACAAIAAAAAAAA=</HashCode>
+      <FileName>Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.EntityBase" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAAAAAAAAIAAAAAAAgAAAAAAIAAAAAAAAAgA=</HashCode>
+      <FileName>Entities\Base\EntityBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CakeManager.Entities.Category" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Entities\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Client" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAQAAAIEABAogAAAIQAAAAE=</HashCode>
+      <FileName>Entities\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Order" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAgAAAAAAAAAAAAACAAAAAhAAAAAA=</HashCode>
+      <FileName>Entities\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Owner" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAABAAAAAAAAAAAQAAAIEAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Entities\Owner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Product" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAAAAAQAAAgAEAAAAAAQAAAAEAACAAAAIgEAAAAA=</HashCode>
+      <FileName>Entities\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Provider" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAIEAAAiAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\Provider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Entities.Shop" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAIEAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Enums.StringValueAttribute" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\StringValueAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Enums.EnumString" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\StringValueAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CakeManager.Session.Session" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Session\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CakeManager.MyFaker.IFakerLoader&lt;T&gt;" Collapsed="true">
+    <Position X="18.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Faker\IFakerLoader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CakeManager.Enums.DataConnectionResource" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Enums\DataConnectionResource.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

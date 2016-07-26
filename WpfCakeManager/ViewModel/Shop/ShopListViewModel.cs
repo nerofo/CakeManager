@@ -47,7 +47,13 @@ namespace WpfCakeManager.ViewModel
 
         private void AddBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.shopListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
             this.shopListView.NavigationService.Navigate(new ShopEditView(new Shop()));
+        }
+
+        private void NavigationService_LoadCompleted(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+            this.shopListView.ShopListUserControl.LoadItems();
         }
     }
 }

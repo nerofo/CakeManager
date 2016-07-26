@@ -29,7 +29,7 @@ namespace WpfCakeManager.ViewModel
         private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             this.categoryView.CategoryUserControl.Update();
-            this.categoryView.NavigationService.Navigate(new CategoryListView());
+            this.categoryView.NavigationService.GoBack();
         }
     }
 }

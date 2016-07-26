@@ -49,7 +49,7 @@ namespace WpfCakeManager.MyUserControl.Single
 
         public async void Load()
         {
-            this.owner = this.ownerManager.Get(Session.Shop.OwnerId).Result;
+            this.owner = this.ownerManager.Get(Session.Shop.Id).Result;
             if (this.owner != null && this.owner.Id != 0)
                 this.AddressUserControl.Load(owner.AddressId);
             else

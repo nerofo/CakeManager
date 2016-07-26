@@ -34,7 +34,13 @@ namespace WpfCakeManager.ViewModel
 
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.categoryListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
             this.categoryListView.NavigationService.Navigate(new CategoryView(new Category()));
+        }
+
+        private void NavigationService_LoadCompleted(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+            this.Load();
         }
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)
