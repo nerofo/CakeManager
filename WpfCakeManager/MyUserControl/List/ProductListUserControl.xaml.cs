@@ -47,9 +47,9 @@ namespace WpfCakeManager.MyUserControl.List
         {
             List<Product> items = null;
             if (idCategory == 0)
-                items = this.productManager.GetList("product", "shopId", Session.Shop.Id);
+                items = this.productManager.GetListByWhere("product", "shopId", Session.Shop.Id);
             else
-                items = this.productManager.GetList("product", "categoryId", idCategory);
+                items = this.productManager.GetListByWhere("product", "categoryId", idCategory);
 
             this.products.Clear();
             foreach (var item in items)

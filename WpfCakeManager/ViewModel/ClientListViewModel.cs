@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using WpfCakeManager.Views.Pages;
 
 namespace WpfCakeManager.ViewModel
@@ -30,12 +31,17 @@ namespace WpfCakeManager.ViewModel
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             this.clientListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
-            this.clientListView.NavigationService.Navigate(new ClientView());
+            this.clientListView.NavigationService.Navigate(new ClientView(null));
         }
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            this.clientListView.NavigationService.Navigate(new ClientView());
+            this.clientListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
+            Client client = (Client)this.clientListView.ClientListUserControl.ListClientL.SelectedItem;
+            if (client == null)
+                MessageBox.Show("Veuiller selectionner un client");
+            else
+                this.clientListView.NavigationService.Navigate(new ClientView(client));
         }
     }
 }

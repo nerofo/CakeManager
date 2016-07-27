@@ -57,9 +57,9 @@ namespace WpfCakeManager.MyUserControl.Single
 
         public Int32 Update()
         {
+            this.shop.Address = this.AddressUserControl.Update();
             if (this.shop.Id == 0)
             {
-                this.shop.Address = this.AddressUserControl.Update();
                 //this.shop = this.shopWebService.Post(this.shop);
                 this.shopManager.Insert(this.shop);
             }

@@ -16,7 +16,6 @@ namespace CakeManager.Entities
         #region Attributes
         private String name;
         private String firstname;
-        private Int32 address;
         private Int32 shopId;
         #endregion
 
@@ -73,22 +72,6 @@ namespace CakeManager.Entities
             {
                 firstname = value;
                 this.OnPropertyChanged("Firstname");
-            }
-        }
-        /// <summary>
-        /// Define or return a address for owner
-        /// </summary>
-        [Column("addressId")]
-        public Int32 AddressId
-        {
-            get
-            {
-                return address;
-            }
-
-            set
-            {
-                address = value;
             }
         }
         /// <summary>

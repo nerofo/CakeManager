@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CakeManager</name>
+    </assembly>
+    <members>
+        <member name="M:CakeManager.AsyncTask.AsyncFactory.TestIt">
+            <summary>
+            Tache lancé en asynchrome
+            </summary>
+        </member>
+        <member name="M:CakeManager.AsyncTask.AsyncFactory.TestItFast">
+            <summary>
+            Meme chose mais en version code plus court
+            </summary>
+        </member>
+        <member name="M:CakeManager.AsyncTask.AsyncFactory.CountTo1000WithReturn">
+            <summary>
+            Tache executant un comptage retournant un numéro
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CakeManager.Entities.Address">
+            <summary>
+            Describe a address
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Address.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="street"></param>
+            <param name="postalCode"></param>
+            <param name="city"></param>
+            <param name="country"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Address.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Address.PostalCode">
+            <summary>
+            Define or return a postal code for address
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Address.City">
+            <summary>
+            Define or return a city for address
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Address.Country">
+            <summary>
+            Define or return a country for address
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Address.Street">
+            <summary>
+            Define or return a street for address
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.EntityBase">
+            <summary>
+            Base class for entities
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.EntityBase.Id">
+            <summary>
+            Define or return a id for EntityBase
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.EntityBase.#ctor">
+            <summary>
+            Constructor for entitybase
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.EntityBase.LoadSingleItem">
+            <summary>
+            Load one item random
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CakeManager.Entities.EntityBase.LoadMultipleItems">
+            <summary>
+            Load multiple item random
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CakeManager.Entities.Category">
+            <summary>
+            Describe a category for product
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Category.#ctor(System.String,System.Collections.Generic.List{CakeManager.Entities.Product})">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="name"></param>
+            <param name="product"></param>
+            <param name="parentCategory"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Category.#ctor">
+            <summary>
+            Constructor for category
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Category.Name">
+            <summary>
+            Define or return a name
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.Client">
+            <summary>
+            Describe a client for shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Client.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="name"></param>
+            <param name="phone"></param>
+            <param name="mail"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Client.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Client.Name">
+            <summary>
+            Define or return a name for client
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Client.Phone">
+            <summary>
+            Define or return a phone for client
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Client.Mail">
+            <summary>
+            Define or return a mail for client
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Client.AddressId">
+            <summary>
+            Define or return a address for client
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Client.ShopId">
+            <summary>
+            Define or return a shop for client
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Client.LoadSingleItem">
+            <summary>
+            Load single one item random
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CakeManager.Entities.Client.LoadMultipleItem">
+            <summary>
+            Load multiple items random
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CakeManager.Entities.Order">
+            <summary>
+            Describe a order for shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Order.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="quantity"></param>
+            <param name="product"></param>
+            <param name="client"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Order.#ctor">
+            <summary>
+            Constructor for order
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Order.Quantity">
+            <summary>
+            Define or return a quantity for order
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Order.ClientId">
+            <summary>
+            Define or return a client for order
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Order.ProductId">
+            <summary>
+            Define or return a product for order
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.Owner">
+            <summary>
+            Describe a owner for shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Owner.#ctor">
+            <summary>
+            Constructor for owner
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Owner.#ctor(System.String,System.String)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="name"></param>
+            <param name="firstname"></param>
+        </member>
+        <member name="P:CakeManager.Entities.Owner.Name">
+            <summary>
+            Define or return a name for provider
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Owner.Firstname">
+            <summary>
+            Define or return a firstname for provider
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Owner.ShopId">
+            <summary>
+            Define or return a shop for owner
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.Product">
+            <summary>
+            Describe a product for shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Product.#ctor(System.Int32,System.String,System.Decimal,System.Decimal)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="price"></param>
+            <param name="quantity"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Product.#ctor">
+            <summary>
+            Constructor for product
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Product.Name">
+            <summary>
+            Define or return a name for product
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Product.CategoryId">
+            <summary>
+            Define or return a name for product
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Product.Price">
+            <summary>
+            Define or return a price for product
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Product.Quantity">
+            <summary>
+            Define or return a quantity for product
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Product.ShopId">
+            <summary>
+            Define or return a shop for product
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.Provider">
+            <summary>
+            Describe a provider for shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Provider.#ctor(System.String,System.String)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="name"></param>
+            <param name="phone"></param>
+        </member>
+        <member name="M:CakeManager.Entities.Provider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Provider.Name">
+            <summary>
+            Define or return a name for provider
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Provider.Phone">
+            <summary>
+            Define or return a phone for provider
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Provider.Address">
+            <summary>
+            Define or return a address for provider
+            </summary>
+        </member>
+        <member name="T:CakeManager.Entities.Shop">
+            <summary>
+            Define a Shop
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Shop.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:CakeManager.Entities.Shop.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="name"></param>
+            <param name="client"></param>
+            <param name="owner"></param>
+            <param name="address"></param>
+            <param name="product"></param>
+        </member>
+        <member name="P:CakeManager.Entities.Shop.Name">
+            <summary>
+            Define or return a name for shop
+            </summary>
+        </member>
+        <member name="P:CakeManager.Entities.Shop.Address">
+            <summary>
+            Define or return a address for shop
+            </summary>
+        </member>
+    </members>
+</doc>

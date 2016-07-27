@@ -26,8 +26,7 @@
         
         <Label FontSize="24" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion utilisateur</Label>
         <Button x:Name="ClientManagerBtn" Content="Gestion des clients" Margin="20" Grid.Row="3" Grid.Column="0"/>
-        <Button IsEnabled="False" x:Name="ProviderManagerBtn" Content="Gestion des fournisseurs" Margin="20" Grid.Row="3" Grid.Column="1"/>
-        <Button IsEnabled="False" x:Name="OwnerManagerBtn" Content="Modifier infos propriétaire" Margin="20" Grid.Row="3" Grid.Column="2"/>
+        <Button x:Name="OwnerManagerBtn" Content="Modifier infos propriétaire" Margin="20" Grid.Row="3" Grid.Column="1"/>
 
         <Label FontSize="24" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">Gestion commande et produit</Label>
         <Button x:Name="CategoryManagerBtn" Content="Gestion des catégories" Margin="20" Grid.Row="5" Grid.Column="0"/>

@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfCakeManager</name>
+    </assembly>
+    <members>
+        <member name="T:WpfCakeManager.MyUserControl.List.CategoryListUserControl">
+            <summary>
+            Logique d'interaction pour ClientUserControl.xaml
+            </summary>
+            <summary>
+            CategoryListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.CategoryListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.List.ShopListUserControl">
+            <summary>
+            Logique d'interaction pour ShopUserControl.xaml
+            </summary>
+            <summary>
+            ShopListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.ShopListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.List.OrderListUserControl">
+            <summary>
+            Logique d'interaction pour ClientUserControl.xaml
+            </summary>
+            <summary>
+            OrderListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.OrderListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.List.ProductListUserControl">
+            <summary>
+            Logique d'interaction pour ClientUserControl.xaml
+            </summary>
+            <summary>
+            ProductListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.ProductListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.List.ClientListUserControl">
+            <summary>
+            Logique d'interaction pour ClientUserControl.xaml
+            </summary>
+            <summary>
+            ClientListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.ClientListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.List.ProviderListUserControl">
+            <summary>
+            Logique d'interaction pour ProviderListUserControl.xaml
+            </summary>
+            <summary>
+            ProviderListUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.List.ProviderListUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.ShopUserControl">
+            <summary>
+            Logique d'interaction pour AddressUserControl.xaml
+            </summary>
+            <summary>
+            ShopUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.ShopUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.CategoryUserControl">
+            <summary>
+            Logique d'interaction pour CategoryUserControl.xaml
+            </summary>
+            <summary>
+            CategoryUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.CategoryUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.AddressUserControl">
+            <summary>
+            Logique d'interaction pour AddressUserControl.xaml
+            </summary>
+            <summary>
+            AddressUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.AddressUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.ClientUserControl">
+            <summary>
+            Logique d'interaction pour ClientUserControl.xaml
+            </summary>
+            <summary>
+            ClientUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.ClientUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.OrderUserControl">
+            <summary>
+            Logique d'interaction pour OrderUserControl.xaml
+            </summary>
+            <summary>
+            OrderUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.OrderUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.OwnerUserControl">
+            <summary>
+            Logique d'interaction pour OwnerUserControl.xaml
+            </summary>
+            <summary>
+            OwnerUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.OwnerUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.Single.ProductUserControl">
+            <summary>
+            Logique d'interaction pour ProductUserControl.xaml
+            </summary>
+            <summary>
+            ProductUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.Single.ProductUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.MyUserControl.ProviderUserControl">
+            <summary>
+            Logique d'interaction pour ProviderUserControl.xaml
+            </summary>
+            <summary>
+            ProviderUserControl
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.MyUserControl.ProviderUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.ViewModel.ShopViewModel.#ctor(WpfCakeManager.Views.Pages.ShopView,CakeManager.Entities.Shop)">
+            <summary>
+            Constructor for menu
+            </summary>
+            <param name="shopView"></param>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ProductView">
+            <summary>
+            Logique d'interaction pour CategoryView.xaml
+            </summary>
+            <summary>
+            ProductView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ProductView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.CategoryView">
+            <summary>
+            Logique d'interaction pour CategoryView.xaml
+            </summary>
+            <summary>
+            CategoryView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.CategoryView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.CategoryListView">
+            <summary>
+            Logique d'interaction pour CategoryListView.xaml
+            </summary>
+            <summary>
+            CategoryListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.CategoryListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ShopListView">
+            <summary>
+            Logique d'interaction pour ClientListView.xaml
+            </summary>
+            <summary>
+            ShopListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ShopListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.OrderListView">
+            <summary>
+            Logique d'interaction pour ClientListView.xaml
+            </summary>
+            <summary>
+            OrderListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.OrderListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.OwnerView">
+            <summary>
+            Logique d'interaction pour ClientView.xaml
+            </summary>
+            <summary>
+            OwnerView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.OwnerView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ProductListView">
+            <summary>
+            Logique d'interaction pour ClientListView.xaml
+            </summary>
+            <summary>
+            ProductListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ProductListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ProviderListView">
+            <summary>
+            Logique d'interaction pour ClientListView.xaml
+            </summary>
+            <summary>
+            ProviderListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ProviderListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ClientListView">
+            <summary>
+            Logique d'interaction pour ClientListView.xaml
+            </summary>
+            <summary>
+            ClientListView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ClientListView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ClientView">
+            <summary>
+            Logique d'interaction pour ClientView.xaml
+            </summary>
+            <summary>
+            ClientView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ClientView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.Pages.ShopView">
+            <summary>
+            Logique d'interaction pour ShopView.xaml
+            </summary>
+            <summary>
+            ShopView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.Pages.ShopView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.NavigationWindows1">
+            <summary>
+            Logique d'interaction pour NavigationWindows1.xaml
+            </summary>
+            <summary>
+            NavigationWindows1
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.NavigationWindows1.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.ShopEditView">
+            <summary>
+            Logique d'interaction pour AddressView.xaml
+            </summary>
+            <summary>
+            ShopEditView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.ShopEditView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.OrderView">
+            <summary>
+            Logique d'interaction pour AddressView.xaml
+            </summary>
+            <summary>
+            OrderView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.OrderView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Views.AddressView">
+            <summary>
+            Logique d'interaction pour AddressView.xaml
+            </summary>
+            <summary>
+            AddressView
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.Views.AddressView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.App">
+            <summary>
+            Logique d'interaction pour App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfCakeManager.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WpfCakeManager.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:WpfCakeManager.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:WpfCakeManager.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

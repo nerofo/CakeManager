@@ -60,7 +60,7 @@ namespace WpfCakeManager.MyUserControl.Single
             }
             else
             {
-
+                this.addressManager.Update(this.address);
             }
             return this.address.Id;
         }

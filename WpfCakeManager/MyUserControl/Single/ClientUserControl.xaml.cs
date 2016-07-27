@@ -64,17 +64,16 @@ namespace WpfCakeManager.MyUserControl.Single
         public Int32 Update()
         {
             this.client.ShopId = Session.Shop.Id;
+            Int32 addressId = this.AddressUserControl.Update();
             if (this.client.Id == 0)
             {
-                Int32 addressId = this.AddressUserControl.Update();
                 this.client.AddressId = addressId;
                 this.clientManager.Insert(this.client);
                 //this.address = this.addressWebService.Post(this.address).Result;
-                //this.category = this.categoryManager.Insert(this.category).Result;
             }
             else
             {
-                
+                this.clientManager.Update(this.client);
             }
             return this.client.Id;
         }

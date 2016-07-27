@@ -28,7 +28,7 @@ namespace WpfCakeManager.ViewModel
             this.shopView.MenuLabel.Content = "Menu principal Magasin " + shop.Name;
             Session.Shop = shop;
             this.shopView.ClientManagerBtn.Click += ClientManagerBtn_Click;
-            this.shopView.ProviderManagerBtn.Click += ProviderManagerBtn_Click;
+            //this.shopView.ProviderManagerBtn.Click += ProviderManagerBtn_Click;
             this.shopView.ProductManagerBtn.Click += ProductManagerBtn_Click;
             this.shopView.OwnerManagerBtn.Click += OwnerManagerBtn_Click;
             this.shopView.OrderManagerBtn.Click += OrderManagerBtn_Click;
@@ -58,10 +58,10 @@ namespace WpfCakeManager.ViewModel
             this.shopView.NavigationService.Navigate(new ProductListView());
         }
 
-        private void ProviderManagerBtn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            this.shopView.NavigationService.Navigate(new ProviderListView());
-        }
+        //private void ProviderManagerBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        //{
+        //    this.shopView.NavigationService.Navigate(new ProviderListView());
+        //}
 
         private void ClientManagerBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {

@@ -18,7 +18,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <uc:ClientListUserControl x:Name="ClientListUserControl" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
-        <Button IsEnabled="false" x:Name="EditBtn" Content="Editer" Grid.Row="1" Grid.Column="1" Margin="20"/>
+        <Button x:Name="EditBtn" Content="Editer" Grid.Row="1" Grid.Column="1" Margin="20"/>
         <Button x:Name="AddB" Content="Ajouter" Grid.Row="1" Grid.Column="0" Margin="20"/>
     </Grid>
 </Page>

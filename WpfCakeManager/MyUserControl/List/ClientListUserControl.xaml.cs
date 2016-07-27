@@ -44,7 +44,7 @@ namespace WpfCakeManager.MyUserControl.List
 
         public void LoadItems()
         {
-            List<Client> items = this.clientManager.GetList("client", "shopId", Session.Shop.Id);
+            List<Client> items = this.clientManager.GetListByWhere("client", "shopId", Session.Shop.Id);
             this.clients.Clear();
             foreach (var item in items)
             {

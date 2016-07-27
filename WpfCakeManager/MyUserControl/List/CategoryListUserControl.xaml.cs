@@ -44,7 +44,7 @@ namespace WpfCakeManager.MyUserControl.List
 
         public void LoadItems(Int32 shopId)
         {
-            List<Category> categories = this.categoryManager.GetList("category", "shopId", shopId);
+            List<Category> categories = this.categoryManager.GetListByWhere("category", "shopId", shopId);
             this.categories.Clear();
             foreach (var item in categories)
             {

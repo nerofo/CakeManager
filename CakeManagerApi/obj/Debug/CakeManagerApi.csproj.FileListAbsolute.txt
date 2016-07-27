@@ -76,3 +76,4 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManag
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManagerApi\obj\Debug\CakeManagerApi.csprojResolveAssemblyReference.cache
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManagerApi\obj\Debug\CakeManagerApi.dll
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManagerApi\obj\Debug\CakeManagerApi.pdb
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManagerApi\bin\CakeManager.xml

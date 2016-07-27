@@ -45,6 +45,7 @@ namespace WpfCakeManager.ViewModel
 
         private void EditBtn_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.categoryListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
             Category category = (Category)this.categoryListView.CategoryListUserControl.ListCategoryL.SelectedItem;
             if (category == null)
                 MessageBox.Show("Veuiller selectionner une catégorie");

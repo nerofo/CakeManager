@@ -14,6 +14,13 @@ namespace WpfCakeManager.ViewModel
         public OwnerViewModel(OwnerView ownerView)
         {
             this.ownerView = ownerView;
+            this.ownerView.ValidateB.Click += ValidateB_Click;
+        }
+
+        private void ValidateB_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            this.ownerView.OwnerUserControl.Update();
+            this.ownerView.NavigationService.GoBack();
         }
     }
 }

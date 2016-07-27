@@ -13,3 +13,4 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManag
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\Newtonsoft.Json.dll
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\CakeManager\bin\Debug\CakeManager.XML

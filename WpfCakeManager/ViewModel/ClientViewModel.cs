@@ -12,12 +12,15 @@ namespace WpfCakeManager.ViewModel
     {
         private ClientView clientView;
 
-        public ClientViewModel(ClientView clientView)
+        public ClientViewModel(ClientView clientView, Client client = null)
         {
             this.clientView = clientView;
 
-            Client client = new Client();
-            this.clientView.ClientUserControl.Load(0);
+            if (client == null)
+                this.clientView.ClientUserControl.Load(0);
+            else
+                this.clientView.ClientUserControl.Load(client.Id);
+
             this.clientView.ValidateB.Click += ValidateB_Click;
         }
 

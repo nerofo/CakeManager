@@ -46,7 +46,7 @@ namespace WpfCakeManager.MyUserControl.List
         {
             List<Order> items = null;
             if (idClient != 0)
-                items = this.orderManager.GetList("orderclient", "clientId", idClient);
+                items = this.orderManager.GetListByWhere("orderclient", "clientId", idClient);
             this.orders.Clear();
             foreach (var item in items)
             {

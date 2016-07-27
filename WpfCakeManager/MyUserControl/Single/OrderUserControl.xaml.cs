@@ -58,7 +58,7 @@ namespace WpfCakeManager.MyUserControl.Single
             this.order.ClientId = client.Id;
 
             //chargement liste produit
-            List<Product> products = this.productManager.GetList("product", "shopId", Session.Shop.Id);
+            List<Product> products = this.productManager.GetListByWhere("product", "shopId", Session.Shop.Id);
             foreach (var item in products)
             {
                 this.ListProductCB.Items.Add(item.ToString());

@@ -23,12 +23,26 @@ namespace WpfCakeManager.ViewModel
             this.productListView = productListView;
             this.productListView.SearchProductBtn.Click += SearchProductBtn_Click;
             this.productListView.AddB.Click += AddB_Click;
+            this.productListView.EditBtn.Click += EditBtn_Click;
             this.categoryManager = new MySQLManager<Category>(DataConnectionResource.LOCALMYQSL);
             this.productListView.CategoryListUserControl.LoadItems(Session.Shop.Id);
         }
 
+        private void EditBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.productListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
+            Product product = (Product)this.productListView.ProductListUserControl.ListProductL.SelectedItem;
+            if (product == null)
+                MessageBox.Show("Veuiller selectionner un produit");
+            else
+            {
+                this.productListView.NavigationService.Navigate(new ProductView(product));
+            }
+        }
+
         private void AddB_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            this.productListView.NavigationService.LoadCompleted += NavigationService_LoadCompleted;
             Category category = (Category)this.productListView.CategoryListUserControl.ListCategoryL.SelectedItem;
             if (category == null)
                 MessageBox.Show("Veuiller selectionner une catégorie");
@@ -42,7 +56,17 @@ namespace WpfCakeManager.ViewModel
                 
         }
 
+        private void NavigationService_LoadCompleted(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+            RefreshByCategory();
+        }
+
         private void SearchProductBtn_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            RefreshByCategory();
+        }
+
+        private void RefreshByCategory()
         {
             Category category = (Category)this.productListView.CategoryListUserControl.ListCategoryL.SelectedItem;
             if (category == null)

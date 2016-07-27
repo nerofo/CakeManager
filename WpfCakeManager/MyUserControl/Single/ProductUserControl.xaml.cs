@@ -61,7 +61,7 @@ namespace WpfCakeManager.MyUserControl.Single
             }
             else
             {
-
+                this.productManager.Update(this.product);
             }
             return this.product.Id;
         }

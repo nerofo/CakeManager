@@ -21,12 +21,12 @@ namespace WpfCakeManager.Views.Pages
     /// </summary>
     public partial class OwnerView : Page
     {
-        private ClientViewModel clientViewModel;
+        private OwnerViewModel ownerViewModel;
 
         public OwnerView()
         {
             InitializeComponent();
-            //this.clientViewModel = new ClientViewModel(this);
+            this.ownerViewModel = new OwnerViewModel(this);
         }
     }
 }

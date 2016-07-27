@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CakeManager.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,10 +24,10 @@ namespace WpfCakeManager.Views.Pages
     {
         private ClientViewModel clientViewModel;
 
-        public ClientView()
+        public ClientView(Client client)
         {
             InitializeComponent();
-            this.clientViewModel = new ClientViewModel(this);
+            this.clientViewModel = new ClientViewModel(this, client);
         }
     }
 }

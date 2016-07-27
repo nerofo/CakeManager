@@ -69,7 +69,7 @@ namespace WpfCakeManager.MyUserControl.Single
             }
             else
             {
-
+                this.categoryManager.Update(this.category);
             }
             return this.category.Id;
         }

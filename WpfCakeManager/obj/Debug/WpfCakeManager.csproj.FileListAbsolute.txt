@@ -80,3 +80,9 @@ C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeMa
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\CategoryView.baml
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ProductView.g.cs
 C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\Views\Pages\ProductView.baml
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\WpfCakeManager.exe.manifest
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\WpfCakeManager.application
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\WpfCakeManager.exe.manifest
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\obj\Debug\WpfCakeManager.application
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\WpfCakeManager.XML
+C:\Users\valentin\Documents\Visual Studio 2015\Projects\CakeManagerApp\WpfCakeManager\bin\Debug\CakeManager.xml

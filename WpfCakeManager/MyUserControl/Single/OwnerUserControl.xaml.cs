@@ -45,31 +45,33 @@ namespace WpfCakeManager.MyUserControl.Single
             this.DataContext = this;
             this.ownerWebService = new WebServiceManager<Owner>(DataConnectionResource.LOCALAPI);
             this.ownerManager = new MySQLManager<Owner>(DataConnectionResource.LOCALMYQSL);
+            Load();
         }
 
         public async void Load()
         {
-            this.owner = this.ownerManager.Get(Session.Shop.Id).Result;
+            this.owner = this.ownerManager.GetByWhere("owner", "shopId", Session.Shop.Id);
             if (this.owner != null && this.owner.Id != 0)
-                this.AddressUserControl.Load(owner.AddressId);
+            {
+                this.Owner = owner;
+            }
             else
             {
                 this.owner = new Owner();
-                this.AddressUserControl.Address = new Address();
             }
         }
 
         public Int32 Update()
         {
+            this.owner.ShopId = Session.Shop.Id;
             if (this.owner.Id == 0)
             {
-                this.owner.AddressId = this.AddressUserControl.Update();
                 //this.shop = this.shopWebService.Post(this.shop).Result;
                 Owner owner = this.ownerManager.Insert(this.owner).Result;
             }
             else
             {
-
+                this.ownerManager.Update(this.owner);
             }
             return this.owner.Id;
         }

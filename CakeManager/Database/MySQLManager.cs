@@ -41,8 +41,7 @@ namespace CakeManager.Database
         {
             await Task.Factory.StartNew(() =>
             {
-                this.DbSetT.Attach(item);
-                this.Entry<TEntity>(item);
+                this.Entry<TEntity>(item).State = EntityState.Modified;
             });
             await this.SaveChangesAsync();
             return item;
@@ -52,7 +51,7 @@ namespace CakeManager.Database
         {
             foreach (var item in items)
             {
-                this.Entry<TEntity>(item);
+                this.Entry<TEntity>(item).State = EntityState.Modified;
             }
             await this.SaveChangesAsync();
             return items;
@@ -63,10 +62,19 @@ namespace CakeManager.Database
             return await this.DbSetT.FindAsync(id) as TEntity;
         }
 
-        public List<TEntity> GetList(String table, String column, Int32 value)
+        public List<TEntity> GetListByWhere(String table, String column, Int32 value)
         {
             List<TEntity> items = this.DbSetT.SqlQuery("SELECT * FROM " + table + " WHERE " + column + " = " + value).ToList<TEntity>();
             return items;
+        }
+
+        public TEntity GetByWhere(String table, String column, Int32 value)
+        {
+            List<TEntity> items = this.DbSetT.SqlQuery("SELECT * FROM " + table + " WHERE " + column + " = " + value).ToList<TEntity>();
+            if (items != null && items.Count > 0)
+                return items[0];
+            else
+                return null;
         }
 
         public async Task<IEnumerable<TEntity>> Get()
